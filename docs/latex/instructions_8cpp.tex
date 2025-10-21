@@ -1,0 +1,73 @@
+\hypertarget{instructions_8cpp}{}\doxysection{src/common/instructions.cpp File Reference}
+\label{instructions_8cpp}\index{src/common/instructions.cpp@{src/common/instructions.cpp}}
+{\ttfamily \#include \char`\"{}common/instructions.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for instructions.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{instructions_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceinstruction__set}{instruction\+\_\+set}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a684c8ea1bb0cd5f2fcdb698286ce49bd}{instruction\+\_\+set\+::is\+Valid\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a2dbf58ce982702b5ebd65bedbad55f1a}{instruction\+\_\+set\+::is\+Valid\+RType\+Instruction}} (const std\+::string \&name)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_ac10fca95259b7db81e9d64605dd6d7fd}{instruction\+\_\+set\+::is\+Valid\+IType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a2686c6cb47421100c0845826a00d6686}{instruction\+\_\+set\+::is\+Valid\+I1\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a1157d60c5ad00551432b62c74dce93ce}{instruction\+\_\+set\+::is\+Valid\+I2\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_ab009114befd859670c1b6a60a4d4a675}{instruction\+\_\+set\+::is\+Valid\+I3\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a402f2c32c5f3981e732c5a7bada97398}{instruction\+\_\+set\+::is\+Valid\+SType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a9f7fd6439b8f1fdf3fa6c4b846161a60}{instruction\+\_\+set\+::is\+Valid\+BType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a72120155b1b49e86de5a21a140757e0c}{instruction\+\_\+set\+::is\+Valid\+UType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a40834369e5972193df7c74fa8d3cd7c4}{instruction\+\_\+set\+::is\+Valid\+JType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_adf2c87a1fa7b27e0012e3eaf1f575538}{instruction\+\_\+set\+::is\+Valid\+Pseudo\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a3e26615428ea0891ded649073e440d88}{instruction\+\_\+set\+::is\+Valid\+Base\+Extension\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a390f2245d92958d7d6e67df52fdeab34}{instruction\+\_\+set\+::is\+Valid\+CSRRType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_ac19e70a283ee2e1b15125faad66ba23e}{instruction\+\_\+set\+::is\+Valid\+CSRIType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a200e08acd1cac12dc89b25fba97fa6ac}{instruction\+\_\+set\+::is\+Valid\+CSRInstruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a1dd7f86382bd6577c7b880367f5912fa}{instruction\+\_\+set\+::is\+Valid\+FDRType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a41eeac0550849ef37fa33ff84cf76a2f}{instruction\+\_\+set\+::is\+Valid\+FDR1\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a708f1663efb124992763e7df4a28345e}{instruction\+\_\+set\+::is\+Valid\+FDR2\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_ab0c4f49b586d5b40444c37be298aad10}{instruction\+\_\+set\+::is\+Valid\+FDR3\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a431026007ab52b5f443f62b0282a5632}{instruction\+\_\+set\+::is\+Valid\+FDR4\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_afafd6b6e78053bc61fb215a4e3134ca3}{instruction\+\_\+set\+::is\+Valid\+FDIType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_aab688f810da37e8780510aab2f2232a0}{instruction\+\_\+set\+::is\+Valid\+FDSType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_aa2718ca4cc03370f5c3d248ed59028b6}{instruction\+\_\+set\+::is\+FInstruction}} (const uint32\+\_\+t \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a5303fb0dd8dd34c268231c47f85a02fc}{instruction\+\_\+set\+::is\+DInstruction}} (const uint32\+\_\+t \&instruction)
+\item 
+std\+::string \mbox{\hyperlink{namespaceinstruction__set_a605befee774c8275dccbdf096ac5b66f}{instruction\+\_\+set\+::get\+Expected\+Syntaxes}} (const std\+::string \&opcode)
+\end{DoxyCompactItemize}

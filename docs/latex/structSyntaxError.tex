@@ -1,0 +1,141 @@
+\hypertarget{structSyntaxError}{}\doxysection{Syntax\+Error Struct Reference}
+\label{structSyntaxError}\index{SyntaxError@{SyntaxError}}
+
+
+Represents a generic syntax error in the assembler.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSyntaxError_a1590e29e4c9b073229df9f05c916d552}{Syntax\+Error}} (std\+::string \mbox{\hyperlink{structSyntaxError_a9c064e330b5cc93293bda3fd208159d5}{main\+\_\+message}}, std\+::string \mbox{\hyperlink{structSyntaxError_a0b769ff07016ae1d00586c944904e512}{sub\+\_\+message}}, std\+::string \mbox{\hyperlink{structSyntaxError_acae5f667a03485a07a15be1401c305fc}{filename}}, unsigned int \mbox{\hyperlink{structSyntaxError_a3089d545ce8e46b9ba8d254842fb074f}{line\+\_\+number}}, unsigned int \mbox{\hyperlink{structSyntaxError_ae6205e7848436f8692d27552daf71e7c}{column\+\_\+number}}, std\+::string \mbox{\hyperlink{structSyntaxError_ae410b226a26da9eff98796d7579378af}{line\+\_\+text}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structSyntaxError_a9c064e330b5cc93293bda3fd208159d5}{main\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Main error message. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structSyntaxError_a0b769ff07016ae1d00586c944904e512}{sub\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Sub error message with additional details. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structSyntaxError_acae5f667a03485a07a15be1401c305fc}{filename}}
+\begin{DoxyCompactList}\small\item\em Filename where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structSyntaxError_a3089d545ce8e46b9ba8d254842fb074f}{line\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Line number where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structSyntaxError_ae6205e7848436f8692d27552daf71e7c}{column\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Column number where the error occurred. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structSyntaxError_ae410b226a26da9eff98796d7579378af}{line\+\_\+text}}
+\begin{DoxyCompactList}\small\item\em Text of the line where the error occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{structSyntaxError_a7c1425e4280f14accb1ca6835b562347}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structSyntaxError}{Syntax\+Error}} \&error)
+\begin{DoxyCompactList}\small\item\em Overloads the output stream operator to print the error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a generic syntax error in the assembler. 
+
+This structure is used to store details of a syntax error, including the error message, file location, and the line where the error occurred. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structSyntaxError_a1590e29e4c9b073229df9f05c916d552}\label{structSyntaxError_a1590e29e4c9b073229df9f05c916d552}} 
+\index{SyntaxError@{SyntaxError}!SyntaxError@{SyntaxError}}
+\index{SyntaxError@{SyntaxError}!SyntaxError@{SyntaxError}}
+\doxysubsubsection{\texorpdfstring{SyntaxError()}{SyntaxError()}}
+{\footnotesize\ttfamily Syntax\+Error\+::\+Syntax\+Error (\begin{DoxyParamCaption}\item[{std\+::string}]{main\+\_\+message,  }\item[{std\+::string}]{sub\+\_\+message,  }\item[{std\+::string}]{filename,  }\item[{unsigned int}]{line\+\_\+number,  }\item[{unsigned int}]{column\+\_\+number,  }\item[{std\+::string}]{line\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structSyntaxError_a7c1425e4280f14accb1ca6835b562347}\label{structSyntaxError_a7c1425e4280f14accb1ca6835b562347}} 
+\index{SyntaxError@{SyntaxError}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!SyntaxError@{SyntaxError}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{structSyntaxError}{Syntax\+Error}} \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the output stream operator to print the error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Output stream. \\
+\hline
+{\em error} & The \mbox{\hyperlink{structSyntaxError}{Syntax\+Error}} to print. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Modified output stream. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structSyntaxError_ae6205e7848436f8692d27552daf71e7c}\label{structSyntaxError_ae6205e7848436f8692d27552daf71e7c}} 
+\index{SyntaxError@{SyntaxError}!column\_number@{column\_number}}
+\index{column\_number@{column\_number}!SyntaxError@{SyntaxError}}
+\doxysubsubsection{\texorpdfstring{column\_number}{column\_number}}
+{\footnotesize\ttfamily unsigned int Syntax\+Error\+::column\+\_\+number}
+
+
+
+Column number where the error occurred. 
+
+\mbox{\Hypertarget{structSyntaxError_acae5f667a03485a07a15be1401c305fc}\label{structSyntaxError_acae5f667a03485a07a15be1401c305fc}} 
+\index{SyntaxError@{SyntaxError}!filename@{filename}}
+\index{filename@{filename}!SyntaxError@{SyntaxError}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily std\+::string Syntax\+Error\+::filename}
+
+
+
+Filename where the error occurred. 
+
+\mbox{\Hypertarget{structSyntaxError_a3089d545ce8e46b9ba8d254842fb074f}\label{structSyntaxError_a3089d545ce8e46b9ba8d254842fb074f}} 
+\index{SyntaxError@{SyntaxError}!line\_number@{line\_number}}
+\index{line\_number@{line\_number}!SyntaxError@{SyntaxError}}
+\doxysubsubsection{\texorpdfstring{line\_number}{line\_number}}
+{\footnotesize\ttfamily unsigned int Syntax\+Error\+::line\+\_\+number}
+
+
+
+Line number where the error occurred. 
+
+\mbox{\Hypertarget{structSyntaxError_ae410b226a26da9eff98796d7579378af}\label{structSyntaxError_ae410b226a26da9eff98796d7579378af}} 
+\index{SyntaxError@{SyntaxError}!line\_text@{line\_text}}
+\index{line\_text@{line\_text}!SyntaxError@{SyntaxError}}
+\doxysubsubsection{\texorpdfstring{line\_text}{line\_text}}
+{\footnotesize\ttfamily std\+::string Syntax\+Error\+::line\+\_\+text}
+
+
+
+Text of the line where the error occurred. 
+
+\mbox{\Hypertarget{structSyntaxError_a9c064e330b5cc93293bda3fd208159d5}\label{structSyntaxError_a9c064e330b5cc93293bda3fd208159d5}} 
+\index{SyntaxError@{SyntaxError}!main\_message@{main\_message}}
+\index{main\_message@{main\_message}!SyntaxError@{SyntaxError}}
+\doxysubsubsection{\texorpdfstring{main\_message}{main\_message}}
+{\footnotesize\ttfamily std\+::string Syntax\+Error\+::main\+\_\+message}
+
+
+
+Main error message. 
+
+\mbox{\Hypertarget{structSyntaxError_a0b769ff07016ae1d00586c944904e512}\label{structSyntaxError_a0b769ff07016ae1d00586c944904e512}} 
+\index{SyntaxError@{SyntaxError}!sub\_message@{sub\_message}}
+\index{sub\_message@{sub\_message}!SyntaxError@{SyntaxError}}
+\doxysubsubsection{\texorpdfstring{sub\_message}{sub\_message}}
+{\footnotesize\ttfamily std\+::string Syntax\+Error\+::sub\+\_\+message}
+
+
+
+Sub error message with additional details. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/assembler/\mbox{\hyperlink{errors_8h}{errors.\+h}}\end{DoxyCompactItemize}

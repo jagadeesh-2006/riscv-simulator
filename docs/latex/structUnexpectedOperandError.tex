@@ -1,0 +1,125 @@
+\hypertarget{structUnexpectedOperandError}{}\doxysection{Unexpected\+Operand\+Error Struct Reference}
+\label{structUnexpectedOperandError}\index{UnexpectedOperandError@{UnexpectedOperandError}}
+
+
+Represents an error caused by encountering an unexpected operand.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structUnexpectedOperandError_adebc057a3f55800a8c4c5a5ce9669070}{Unexpected\+Operand\+Error}} (std\+::string \mbox{\hyperlink{structUnexpectedOperandError_ad79ecfccc13d92272af363134fb42b4b}{main\+\_\+message}}, std\+::string \mbox{\hyperlink{structUnexpectedOperandError_a4c3708b8a5404a3e690f9232b1cbbeea}{sub\+\_\+message}}, std\+::string \mbox{\hyperlink{structUnexpectedOperandError_a2bfd41238e2e563d263bb3de43788435}{filename}}, unsigned int \mbox{\hyperlink{structUnexpectedOperandError_a4b5d21509aced7543dfa6545218bd224}{line\+\_\+number}}, unsigned int \mbox{\hyperlink{structUnexpectedOperandError_a256512695990f24475c824713559d7c6}{column\+\_\+number}}, std\+::string \mbox{\hyperlink{structUnexpectedOperandError_ad59715607abef12156d485cbf4781492}{line\+\_\+text}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structUnexpectedOperandError_ad79ecfccc13d92272af363134fb42b4b}{main\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Main error message. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structUnexpectedOperandError_a4c3708b8a5404a3e690f9232b1cbbeea}{sub\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Sub error message with additional details. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structUnexpectedOperandError_a2bfd41238e2e563d263bb3de43788435}{filename}}
+\begin{DoxyCompactList}\small\item\em Filename where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structUnexpectedOperandError_a4b5d21509aced7543dfa6545218bd224}{line\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Line number where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structUnexpectedOperandError_a256512695990f24475c824713559d7c6}{column\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Column number where the error occurred. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structUnexpectedOperandError_ad59715607abef12156d485cbf4781492}{line\+\_\+text}}
+\begin{DoxyCompactList}\small\item\em Text of the line where the error occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{structUnexpectedOperandError_a200560f3291852734629e64dbfade282}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structUnexpectedOperandError}{Unexpected\+Operand\+Error}} \&error)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an error caused by encountering an unexpected operand. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structUnexpectedOperandError_adebc057a3f55800a8c4c5a5ce9669070}\label{structUnexpectedOperandError_adebc057a3f55800a8c4c5a5ce9669070}} 
+\index{UnexpectedOperandError@{UnexpectedOperandError}!UnexpectedOperandError@{UnexpectedOperandError}}
+\index{UnexpectedOperandError@{UnexpectedOperandError}!UnexpectedOperandError@{UnexpectedOperandError}}
+\doxysubsubsection{\texorpdfstring{UnexpectedOperandError()}{UnexpectedOperandError()}}
+{\footnotesize\ttfamily Unexpected\+Operand\+Error\+::\+Unexpected\+Operand\+Error (\begin{DoxyParamCaption}\item[{std\+::string}]{main\+\_\+message,  }\item[{std\+::string}]{sub\+\_\+message,  }\item[{std\+::string}]{filename,  }\item[{unsigned int}]{line\+\_\+number,  }\item[{unsigned int}]{column\+\_\+number,  }\item[{std\+::string}]{line\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structUnexpectedOperandError_a200560f3291852734629e64dbfade282}\label{structUnexpectedOperandError_a200560f3291852734629e64dbfade282}} 
+\index{UnexpectedOperandError@{UnexpectedOperandError}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!UnexpectedOperandError@{UnexpectedOperandError}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{structUnexpectedOperandError}{Unexpected\+Operand\+Error}} \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structUnexpectedOperandError_a256512695990f24475c824713559d7c6}\label{structUnexpectedOperandError_a256512695990f24475c824713559d7c6}} 
+\index{UnexpectedOperandError@{UnexpectedOperandError}!column\_number@{column\_number}}
+\index{column\_number@{column\_number}!UnexpectedOperandError@{UnexpectedOperandError}}
+\doxysubsubsection{\texorpdfstring{column\_number}{column\_number}}
+{\footnotesize\ttfamily unsigned int Unexpected\+Operand\+Error\+::column\+\_\+number}
+
+
+
+Column number where the error occurred. 
+
+\mbox{\Hypertarget{structUnexpectedOperandError_a2bfd41238e2e563d263bb3de43788435}\label{structUnexpectedOperandError_a2bfd41238e2e563d263bb3de43788435}} 
+\index{UnexpectedOperandError@{UnexpectedOperandError}!filename@{filename}}
+\index{filename@{filename}!UnexpectedOperandError@{UnexpectedOperandError}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily std\+::string Unexpected\+Operand\+Error\+::filename}
+
+
+
+Filename where the error occurred. 
+
+\mbox{\Hypertarget{structUnexpectedOperandError_a4b5d21509aced7543dfa6545218bd224}\label{structUnexpectedOperandError_a4b5d21509aced7543dfa6545218bd224}} 
+\index{UnexpectedOperandError@{UnexpectedOperandError}!line\_number@{line\_number}}
+\index{line\_number@{line\_number}!UnexpectedOperandError@{UnexpectedOperandError}}
+\doxysubsubsection{\texorpdfstring{line\_number}{line\_number}}
+{\footnotesize\ttfamily unsigned int Unexpected\+Operand\+Error\+::line\+\_\+number}
+
+
+
+Line number where the error occurred. 
+
+\mbox{\Hypertarget{structUnexpectedOperandError_ad59715607abef12156d485cbf4781492}\label{structUnexpectedOperandError_ad59715607abef12156d485cbf4781492}} 
+\index{UnexpectedOperandError@{UnexpectedOperandError}!line\_text@{line\_text}}
+\index{line\_text@{line\_text}!UnexpectedOperandError@{UnexpectedOperandError}}
+\doxysubsubsection{\texorpdfstring{line\_text}{line\_text}}
+{\footnotesize\ttfamily std\+::string Unexpected\+Operand\+Error\+::line\+\_\+text}
+
+
+
+Text of the line where the error occurred. 
+
+\mbox{\Hypertarget{structUnexpectedOperandError_ad79ecfccc13d92272af363134fb42b4b}\label{structUnexpectedOperandError_ad79ecfccc13d92272af363134fb42b4b}} 
+\index{UnexpectedOperandError@{UnexpectedOperandError}!main\_message@{main\_message}}
+\index{main\_message@{main\_message}!UnexpectedOperandError@{UnexpectedOperandError}}
+\doxysubsubsection{\texorpdfstring{main\_message}{main\_message}}
+{\footnotesize\ttfamily std\+::string Unexpected\+Operand\+Error\+::main\+\_\+message}
+
+
+
+Main error message. 
+
+\mbox{\Hypertarget{structUnexpectedOperandError_a4c3708b8a5404a3e690f9232b1cbbeea}\label{structUnexpectedOperandError_a4c3708b8a5404a3e690f9232b1cbbeea}} 
+\index{UnexpectedOperandError@{UnexpectedOperandError}!sub\_message@{sub\_message}}
+\index{sub\_message@{sub\_message}!UnexpectedOperandError@{UnexpectedOperandError}}
+\doxysubsubsection{\texorpdfstring{sub\_message}{sub\_message}}
+{\footnotesize\ttfamily std\+::string Unexpected\+Operand\+Error\+::sub\+\_\+message}
+
+
+
+Sub error message with additional details. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/assembler/\mbox{\hyperlink{errors_8h}{errors.\+h}}\end{DoxyCompactItemize}

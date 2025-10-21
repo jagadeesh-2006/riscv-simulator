@@ -1,0 +1,669 @@
+\hypertarget{namespaceInstructionSet}{}\doxysection{Instruction\+Set Namespace Reference}
+\label{namespaceInstructionSet}\index{instruction_set@{instruction_set}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structInstructionSet_1_1InstructionEncoding}{Instruction\+Encoding}}
+\begin{DoxyCompactList}\small\item\em Encodes the components of an instruction. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structInstructionSet_1_1RTypeInstructionEncoding}{RType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structInstructionSet_1_1R4TypeInstructionEncoding}{R4\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structInstructionSet_1_1I1TypeInstructionEncoding}{I1\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structInstructionSet_1_1I2TypeInstructionEncoding}{I2\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structInstructionSet_1_1I3TypeInstructionEncoding}{I3\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structInstructionSet_1_1STypeInstructionEncoding}{SType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structInstructionSet_1_1BTypeInstructionEncoding}{BType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structInstructionSet_1_1UTypeInstructionEncoding}{UType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structInstructionSet_1_1JTypeInstructionEncoding}{JType\+Instruction\+Encoding}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74e}{Syntax\+Type}} \{ \newline
+\mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea41dbb99a6896d9e96d14138265da5221}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea6928cbdc3a5078e1dc0ad9ca43016922}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+I}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea54fc6e8c9d10a97ed4a5e7d0ab9553eb}{O\+\_\+\+GPR\+\_\+\+C\+\_\+I}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea364880ae1f94f6bc2994640139c45f40}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+IL}}
+, \newline
+\mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaf6223c5677027b1fc3b40e9cc9c10cd9}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+DL}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ead0b5df5218c775d236e94b953634aaca}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+IL}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eac4900375e3b89f5e09e1f06464fa79b9}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+DL}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ead8a1a972ad133831dff5a091d86767c6}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+I\+\_\+\+LP\+\_\+\+GPR\+\_\+\+RP}}
+, \newline
+\mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaf186217753c37b9b9f958d906208506e}{O}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eabbd7b8a2e3f2db9d4a03e9f243e8c9bb}{PSEUDO}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaa9a5f4479bf2405b3bf315c47b0cf3b0}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea35456c8df1be6e0369b59d2dcc5b5e6d}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR}}
+, \newline
+\mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea26c0ed632be719d001499f10cf5b8a16}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaccff7c0457276e403b2fa1a4e941c155}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+GPR}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea7c56ceaf0b4fd799a397e31225ad2067}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+FPR}}
+, \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea4acbd7a3820c4fe37725ec992ebe084a}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR}}
+, \newline
+\mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea4b80d7d1223745bdf966288df20f1fa3}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+I\+\_\+\+LP\+\_\+\+GPR\+\_\+\+RP}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum that represents different syntax types for instructions. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6a}{Instruction\+Type}} \{ \newline
+\mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aae1e1d3d40573127e9ee0480caf1283d6}{R}}
+, \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa8717ce4dfdc86a4b576d9e983ab9fb29}{R4}}
+, \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aaa18c217c4f2a811afcaaf5052945e31b}{I1}}
+, \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa8213a4c2934a732d4ab7d75e9d3e32f4}{I2}}
+, \newline
+\mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aaf4a3f9ad212c5f18078484d1b535ea95}{I3}}
+, \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa5dbc98dcc983a70728bd082d1a47546e}{S}}
+, \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa9d5ed678fe57bcca610140957afab571}{B}}
+, \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa4c614360da93c0a041b22e537de151eb}{U}}
+, \newline
+\mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aaff44570aca8241914870afbc310cdb85}{J}}
+, \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa69691c7bdcc3ce6d5d8a1361f22d04ac}{M}}
+, \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa800618943025315f869e4e1f09471012}{F}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum that represents different types of opcodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_ab7085645b7bb3314188c20e48438539d}{is\+Valid\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_a1291b519a0e372cfea8af74d5ad968f6}{is\+Valid\+RType\+Instruction}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Validates if a given R-\/type instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_a216f3848e3443dbd9a34b6b10774e492}{is\+Valid\+IType\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given I-\/type instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_a89767baa1194ca14a558e6ea6410b636}{is\+Valid\+I1\+Type\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given I1-\/type instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_a6b54bc81e6f67c37e45ce8633d5a1e6d}{is\+Valid\+I2\+Type\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given I2-\/type instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_abc96d6aeda2090825bf34886bceb3a35}{is\+Valid\+I3\+Type\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given I3-\/type instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_a7c5029a32183f9bb9c5a7b4a51cd1a35}{is\+Valid\+SType\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given S-\/type instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_a3034cdaf7d375f55edb8fa02c85d536e}{is\+Valid\+BType\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given B-\/type instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_a986d514da055dec69ad815691685a74a}{is\+Valid\+UType\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given U-\/type instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_ad5efefc2871fd9684541e8f360757b13}{is\+Valid\+JType\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given J-\/type instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_aae5026d6952e647862be336a37cd826e}{is\+Valid\+Pseudo\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given pseudo-\/instruction is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_a2e374826fc21f673cfd43781ff6af0bb}{is\+Valid\+Base\+Extension\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceInstructionSet_adf5058e78421c8ff66a9a4d9d8fffc70}{is\+Valid\+FExtension\+Instruction}} (const std\+::string \&instruction)
+\begin{DoxyCompactList}\small\item\em Validates if a given F-\/extension instruction is valid. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceInstructionSet_a55c193a0447aa84d2a9f87a41a359b91}{get\+Expected\+Syntaxes}} (const std\+::string \&opcode)
+\begin{DoxyCompactList}\small\item\em Retrieves the expected syntax for a given opcode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1RTypeInstructionEncoding}{RType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceInstructionSet_ae7e15796bfc93498ee496411ac46b615}{R\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1I1TypeInstructionEncoding}{I1\+Type\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceInstructionSet_afb55f85173c5060cbe86a8b3b51c6eb2}{I1\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1I3TypeInstructionEncoding}{I3\+Type\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceInstructionSet_a868d5bbf8dc7b8a7352a2cd9e7e66b20}{I3\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1I2TypeInstructionEncoding}{I2\+Type\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceInstructionSet_a66fb47c53467dda663b33b1ae3bb119d}{I2\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1STypeInstructionEncoding}{SType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceInstructionSet_a294d6a66b2cce53ae8b86d3af98ab21c}{S\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1BTypeInstructionEncoding}{BType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceInstructionSet_a79b50b1d9b0459042392129c03e90065}{B\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1UTypeInstructionEncoding}{UType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceInstructionSet_aa87007facf76b1daab3bd188b77eab0f}{U\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1JTypeInstructionEncoding}{JType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceInstructionSet_abc35f0247eeb21642e14630816986377}{J\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6a}{Instruction\+Type}} $>$ \mbox{\hyperlink{namespaceInstructionSet_ac47932d33ecbc839ace73301dc0214f2}{instruction\+\_\+opcode\+\_\+type\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em A map that associates instruction names with their corresponding opcode type. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74e}{Syntax\+Type}} $>$ $>$ \mbox{\hyperlink{namespaceInstructionSet_a997ac829bd6afd03b167561e37df5cf5}{instruction\+\_\+syntax\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em A map that associates instruction names with their expected syntax. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1InstructionEncoding}{Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceInstructionSet_ab046b55c7adf74913cf06c27f1f4c778}{instruction\+\_\+encoding\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em A map that associates instruction names with their corresponding encoding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6a}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6a}} 
+\index{instruction_set@{instruction_set}!InstructionType@{InstructionType}}
+\index{InstructionType@{InstructionType}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{InstructionType}{InstructionType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6a}{Instruction\+Set\+::\+Instruction\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum that represents different types of opcodes. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R@{R}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!R@{R}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aae1e1d3d40573127e9ee0480caf1283d6}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aae1e1d3d40573127e9ee0480caf1283d6}}
+R&R-\/type instruction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R4@{R4}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!R4@{R4}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa8717ce4dfdc86a4b576d9e983ab9fb29}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa8717ce4dfdc86a4b576d9e983ab9fb29}}
+R4&R4-\/type instruction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I1@{I1}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!I1@{I1}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aaa18c217c4f2a811afcaaf5052945e31b}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aaa18c217c4f2a811afcaaf5052945e31b}}
+I1&I-\/type instruction with 12-\/bit immediate. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2@{I2}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!I2@{I2}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa8213a4c2934a732d4ab7d75e9d3e32f4}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa8213a4c2934a732d4ab7d75e9d3e32f4}}
+I2&I-\/type instruction with 6-\/bit immediate and a funct6 field. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I3@{I3}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!I3@{I3}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aaf4a3f9ad212c5f18078484d1b535ea95}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aaf4a3f9ad212c5f18078484d1b535ea95}}
+I3&I-\/type instruction of ecall and ebreak. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S@{S}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!S@{S}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa5dbc98dcc983a70728bd082d1a47546e}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa5dbc98dcc983a70728bd082d1a47546e}}
+S&S-\/type instruction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!B@{B}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa9d5ed678fe57bcca610140957afab571}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa9d5ed678fe57bcca610140957afab571}}
+B&B-\/type instruction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U@{U}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!U@{U}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa4c614360da93c0a041b22e537de151eb}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa4c614360da93c0a041b22e537de151eb}}
+U&U-\/type instruction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{J@{J}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!J@{J}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aaff44570aca8241914870afbc310cdb85}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aaff44570aca8241914870afbc310cdb85}}
+J&J-\/type instruction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M@{M}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!M@{M}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa69691c7bdcc3ce6d5d8a1361f22d04ac}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa69691c7bdcc3ce6d5d8a1361f22d04ac}}
+M&M-\/extension instruction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F@{F}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!F@{F}}}\mbox{\Hypertarget{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa800618943025315f869e4e1f09471012}\label{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6aa800618943025315f869e4e1f09471012}}
+F&F-\/extension instruction. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74e}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74e}} 
+\index{instruction_set@{instruction_set}!SyntaxType@{SyntaxType}}
+\index{SyntaxType@{SyntaxType}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{SyntaxType}{SyntaxType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74e}{Instruction\+Set\+::\+Syntax\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum that represents different syntax types for instructions. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_GPR\_C\_GPR@{O\_GPR\_C\_GPR\_C\_GPR}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_GPR\_C\_GPR\_C\_GPR@{O\_GPR\_C\_GPR\_C\_GPR}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea41dbb99a6896d9e96d14138265da5221}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea41dbb99a6896d9e96d14138265da5221}}
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR&Opcode general-\/register , general-\/register , register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_GPR\_C\_I@{O\_GPR\_C\_GPR\_C\_I}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_GPR\_C\_GPR\_C\_I@{O\_GPR\_C\_GPR\_C\_I}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea6928cbdc3a5078e1dc0ad9ca43016922}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea6928cbdc3a5078e1dc0ad9ca43016922}}
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+I&Opcode general-\/register , general-\/register , immediate. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_I@{O\_GPR\_C\_I}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_GPR\_C\_I@{O\_GPR\_C\_I}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea54fc6e8c9d10a97ed4a5e7d0ab9553eb}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea54fc6e8c9d10a97ed4a5e7d0ab9553eb}}
+O\+\_\+\+GPR\+\_\+\+C\+\_\+I&Opcode general-\/register , immediate. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_GPR\_C\_IL@{O\_GPR\_C\_GPR\_C\_IL}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_GPR\_C\_GPR\_C\_IL@{O\_GPR\_C\_GPR\_C\_IL}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea364880ae1f94f6bc2994640139c45f40}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea364880ae1f94f6bc2994640139c45f40}}
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+IL&Opcode general-\/register , general-\/register , immediate , instruction\+\_\+label. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_GPR\_C\_DL@{O\_GPR\_C\_GPR\_C\_DL}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_GPR\_C\_GPR\_C\_DL@{O\_GPR\_C\_GPR\_C\_DL}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaf6223c5677027b1fc3b40e9cc9c10cd9}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaf6223c5677027b1fc3b40e9cc9c10cd9}}
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+DL&Opcode register , register , immediate , data\+\_\+label. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_IL@{O\_GPR\_C\_IL}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_GPR\_C\_IL@{O\_GPR\_C\_IL}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ead0b5df5218c775d236e94b953634aaca}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ead0b5df5218c775d236e94b953634aaca}}
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+IL&Opcode register , instruction\+\_\+label. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_DL@{O\_GPR\_C\_DL}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_GPR\_C\_DL@{O\_GPR\_C\_DL}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eac4900375e3b89f5e09e1f06464fa79b9}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eac4900375e3b89f5e09e1f06464fa79b9}}
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+DL&Opcode register , data\+\_\+label. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_I\_LP\_GPR\_RP@{O\_GPR\_C\_I\_LP\_GPR\_RP}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_GPR\_C\_I\_LP\_GPR\_RP@{O\_GPR\_C\_I\_LP\_GPR\_RP}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ead8a1a972ad133831dff5a091d86767c6}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ead8a1a972ad133831dff5a091d86767c6}}
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+I\+\_\+\+LP\+\_\+\+GPR\+\_\+\+RP&Opcode register , immediate , lparen , register , rparen. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O@{O}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O@{O}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaf186217753c37b9b9f958d906208506e}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaf186217753c37b9b9f958d906208506e}}
+O&Opcode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PSEUDO@{PSEUDO}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!PSEUDO@{PSEUDO}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eabbd7b8a2e3f2db9d4a03e9f243e8c9bb}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eabbd7b8a2e3f2db9d4a03e9f243e8c9bb}}
+PSEUDO&Pseudo instruction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR@{O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR@{O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaa9a5f4479bf2405b3bf315c47b0cf3b0}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaa9a5f4479bf2405b3bf315c47b0cf3b0}}
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR&Opcode floating-\/point-\/register , floating-\/point-\/register , floating-\/point-\/register , floating-\/point-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_FPR\_C\_FPR@{O\_FPR\_C\_FPR\_C\_FPR}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_FPR\_C\_FPR\_C\_FPR@{O\_FPR\_C\_FPR\_C\_FPR}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea35456c8df1be6e0369b59d2dcc5b5e6d}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea35456c8df1be6e0369b59d2dcc5b5e6d}}
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR&Opcode floating-\/point-\/register , floating-\/point-\/register , floating-\/point-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_FPR@{O\_FPR\_C\_FPR}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_FPR\_C\_FPR@{O\_FPR\_C\_FPR}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea26c0ed632be719d001499f10cf5b8a16}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea26c0ed632be719d001499f10cf5b8a16}}
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR&Opcode floating-\/point-\/register , floating-\/point-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_GPR@{O\_FPR\_C\_GPR}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_FPR\_C\_GPR@{O\_FPR\_C\_GPR}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaccff7c0457276e403b2fa1a4e941c155}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74eaccff7c0457276e403b2fa1a4e941c155}}
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+GPR&Opcode floating-\/point-\/register , general-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_FPR@{O\_GPR\_C\_FPR}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_GPR\_C\_FPR@{O\_GPR\_C\_FPR}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea7c56ceaf0b4fd799a397e31225ad2067}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea7c56ceaf0b4fd799a397e31225ad2067}}
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+FPR&Opcode general-\/register , floating-\/point-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_FPR\_C\_FPR@{O\_GPR\_C\_FPR\_C\_FPR}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_GPR\_C\_FPR\_C\_FPR@{O\_GPR\_C\_FPR\_C\_FPR}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea4acbd7a3820c4fe37725ec992ebe084a}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea4acbd7a3820c4fe37725ec992ebe084a}}
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR&Opcode general-\/register , floating-\/point-\/register , floating-\/point-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_I\_LP\_GPR\_RP@{O\_FPR\_C\_I\_LP\_GPR\_RP}!instruction_set@{instruction_set}}\index{instruction_set@{instruction_set}!O\_FPR\_C\_I\_LP\_GPR\_RP@{O\_FPR\_C\_I\_LP\_GPR\_RP}}}\mbox{\Hypertarget{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea4b80d7d1223745bdf966288df20f1fa3}\label{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74ea4b80d7d1223745bdf966288df20f1fa3}}
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+I\+\_\+\+LP\+\_\+\+GPR\+\_\+\+RP&Opcode floating-\/point-\/register , immediate , lparen , general-\/register , rparen. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceInstructionSet_a55c193a0447aa84d2a9f87a41a359b91}\label{namespaceInstructionSet_a55c193a0447aa84d2a9f87a41a359b91}} 
+\index{instruction_set@{instruction_set}!getExpectedSyntaxes@{getExpectedSyntaxes}}
+\index{getExpectedSyntaxes@{getExpectedSyntaxes}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{getExpectedSyntaxes()}{getExpectedSyntaxes()}}
+{\footnotesize\ttfamily std\+::string Instruction\+Set\+::get\+Expected\+Syntaxes (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{opcode }\end{DoxyParamCaption})}
+
+
+
+Retrieves the expected syntax for a given opcode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & The opcode of the instruction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representing the expected syntax of the instruction. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_a2e374826fc21f673cfd43781ff6af0bb}\label{namespaceInstructionSet_a2e374826fc21f673cfd43781ff6af0bb}} 
+\index{instruction_set@{instruction_set}!isValidBaseExtensionInstruction@{isValidBaseExtensionInstruction}}
+\index{isValidBaseExtensionInstruction@{isValidBaseExtensionInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidBaseExtensionInstruction()}{isValidBaseExtensionInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+Base\+Extension\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceInstructionSet_a3034cdaf7d375f55edb8fa02c85d536e}\label{namespaceInstructionSet_a3034cdaf7d375f55edb8fa02c85d536e}} 
+\index{instruction_set@{instruction_set}!isValidBTypeInstruction@{isValidBTypeInstruction}}
+\index{isValidBTypeInstruction@{isValidBTypeInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidBTypeInstruction()}{isValidBTypeInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+BType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given B-\/type instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The B-\/type instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_adf5058e78421c8ff66a9a4d9d8fffc70}\label{namespaceInstructionSet_adf5058e78421c8ff66a9a4d9d8fffc70}} 
+\index{instruction_set@{instruction_set}!isValidFExtensionInstruction@{isValidFExtensionInstruction}}
+\index{isValidFExtensionInstruction@{isValidFExtensionInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidFExtensionInstruction()}{isValidFExtensionInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+FExtension\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given F-\/extension instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The F-\/extension instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_a89767baa1194ca14a558e6ea6410b636}\label{namespaceInstructionSet_a89767baa1194ca14a558e6ea6410b636}} 
+\index{instruction_set@{instruction_set}!isValidI1TypeInstruction@{isValidI1TypeInstruction}}
+\index{isValidI1TypeInstruction@{isValidI1TypeInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidI1TypeInstruction()}{isValidI1TypeInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+I1\+Type\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given I1-\/type instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The I1-\/type instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_a6b54bc81e6f67c37e45ce8633d5a1e6d}\label{namespaceInstructionSet_a6b54bc81e6f67c37e45ce8633d5a1e6d}} 
+\index{instruction_set@{instruction_set}!isValidI2TypeInstruction@{isValidI2TypeInstruction}}
+\index{isValidI2TypeInstruction@{isValidI2TypeInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidI2TypeInstruction()}{isValidI2TypeInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+I2\+Type\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given I2-\/type instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The I2-\/type instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_abc96d6aeda2090825bf34886bceb3a35}\label{namespaceInstructionSet_abc96d6aeda2090825bf34886bceb3a35}} 
+\index{instruction_set@{instruction_set}!isValidI3TypeInstruction@{isValidI3TypeInstruction}}
+\index{isValidI3TypeInstruction@{isValidI3TypeInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidI3TypeInstruction()}{isValidI3TypeInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+I3\+Type\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given I3-\/type instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The I3-\/type instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_ab7085645b7bb3314188c20e48438539d}\label{namespaceInstructionSet_ab7085645b7bb3314188c20e48438539d}} 
+\index{instruction_set@{instruction_set}!isValidInstruction@{isValidInstruction}}
+\index{isValidInstruction@{isValidInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidInstruction()}{isValidInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_a216f3848e3443dbd9a34b6b10774e492}\label{namespaceInstructionSet_a216f3848e3443dbd9a34b6b10774e492}} 
+\index{instruction_set@{instruction_set}!isValidITypeInstruction@{isValidITypeInstruction}}
+\index{isValidITypeInstruction@{isValidITypeInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidITypeInstruction()}{isValidITypeInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+IType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given I-\/type instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The I-\/type instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_ad5efefc2871fd9684541e8f360757b13}\label{namespaceInstructionSet_ad5efefc2871fd9684541e8f360757b13}} 
+\index{instruction_set@{instruction_set}!isValidJTypeInstruction@{isValidJTypeInstruction}}
+\index{isValidJTypeInstruction@{isValidJTypeInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidJTypeInstruction()}{isValidJTypeInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+JType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given J-\/type instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The J-\/type instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_aae5026d6952e647862be336a37cd826e}\label{namespaceInstructionSet_aae5026d6952e647862be336a37cd826e}} 
+\index{instruction_set@{instruction_set}!isValidPseudoInstruction@{isValidPseudoInstruction}}
+\index{isValidPseudoInstruction@{isValidPseudoInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidPseudoInstruction()}{isValidPseudoInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+Pseudo\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given pseudo-\/instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The pseudo-\/instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the pseudo-\/instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_a1291b519a0e372cfea8af74d5ad968f6}\label{namespaceInstructionSet_a1291b519a0e372cfea8af74d5ad968f6}} 
+\index{instruction_set@{instruction_set}!isValidRTypeInstruction@{isValidRTypeInstruction}}
+\index{isValidRTypeInstruction@{isValidRTypeInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidRTypeInstruction()}{isValidRTypeInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+RType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Validates if a given R-\/type instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The R-\/type instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_a7c5029a32183f9bb9c5a7b4a51cd1a35}\label{namespaceInstructionSet_a7c5029a32183f9bb9c5a7b4a51cd1a35}} 
+\index{instruction_set@{instruction_set}!isValidSTypeInstruction@{isValidSTypeInstruction}}
+\index{isValidSTypeInstruction@{isValidSTypeInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidSTypeInstruction()}{isValidSTypeInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+SType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given S-\/type instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The S-\/type instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceInstructionSet_a986d514da055dec69ad815691685a74a}\label{namespaceInstructionSet_a986d514da055dec69ad815691685a74a}} 
+\index{instruction_set@{instruction_set}!isValidUTypeInstruction@{isValidUTypeInstruction}}
+\index{isValidUTypeInstruction@{isValidUTypeInstruction}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{isValidUTypeInstruction()}{isValidUTypeInstruction()}}
+{\footnotesize\ttfamily bool Instruction\+Set\+::is\+Valid\+UType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Validates if a given U-\/type instruction is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & The U-\/type instruction string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the instruction is valid, false otherwise. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceInstructionSet_a79b50b1d9b0459042392129c03e90065}\label{namespaceInstructionSet_a79b50b1d9b0459042392129c03e90065}} 
+\index{instruction_set@{instruction_set}!B\_type\_instruction\_encoding\_map@{B\_type\_instruction\_encoding\_map}}
+\index{B\_type\_instruction\_encoding\_map@{B\_type\_instruction\_encoding\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{B\_type\_instruction\_encoding\_map}{B\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1BTypeInstructionEncoding}{BType\+Instruction\+Encoding}} $>$ Instruction\+Set\+::\+B\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}beq"{}},     \{0b1100011, 0b000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}bne"{}},     \{0b1100011, 0b001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}blt"{}},     \{0b1100011, 0b100\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}bge"{}},     \{0b1100011, 0b101\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}bltu"{}},    \{0b1100011, 0b110\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}bgeu"{}},    \{0b1100011, 0b111\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceInstructionSet_afb55f85173c5060cbe86a8b3b51c6eb2}\label{namespaceInstructionSet_afb55f85173c5060cbe86a8b3b51c6eb2}} 
+\index{instruction_set@{instruction_set}!I1\_type\_instruction\_encoding\_map@{I1\_type\_instruction\_encoding\_map}}
+\index{I1\_type\_instruction\_encoding\_map@{I1\_type\_instruction\_encoding\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{I1\_type\_instruction\_encoding\_map}{I1\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1I1TypeInstructionEncoding}{I1\+Type\+Instruction\+Encoding}} $>$ Instruction\+Set\+::\+I1\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}addi"{}},    \{0b0010011, 0b000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}xori"{}},    \{0b0010011, 0b100\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}ori"{}},     \{0b0010011, 0b110\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}andi"{}},    \{0b0010011, 0b111\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sltiu"{}},   \{0b0010011, 0b011\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}slti"{}},    \{0b0010011, 0b010\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}addiw"{}},   \{0b0011011, 0b000\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lh"{}},      \{0b0000011, 0b001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lw"{}},      \{0b0000011, 0b010\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lb"{}},      \{0b0000011, 0b000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}ld"{}},      \{0b0000011, 0b011\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lbu"{}},     \{0b0000011, 0b100\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lhu"{}},     \{0b0000011, 0b101\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lwu"{}},     \{0b0000011, 0b110\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}jalr"{}},    \{0b1100111, 0b000\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceInstructionSet_a66fb47c53467dda663b33b1ae3bb119d}\label{namespaceInstructionSet_a66fb47c53467dda663b33b1ae3bb119d}} 
+\index{instruction_set@{instruction_set}!I2\_type\_instruction\_encoding\_map@{I2\_type\_instruction\_encoding\_map}}
+\index{I2\_type\_instruction\_encoding\_map@{I2\_type\_instruction\_encoding\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{I2\_type\_instruction\_encoding\_map}{I2\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1I2TypeInstructionEncoding}{I2\+Type\+Instruction\+Encoding}} $>$ Instruction\+Set\+::\+I2\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}slli"{}},    \{0b0010011, 0b001, 0b000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}srli"{}},    \{0b0010011, 0b101, 0b000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}srai"{}},    \{0b0010011, 0b101, 0b010000\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}slliw"{}},   \{0b0011011, 0b001, 0b000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}srliw"{}},   \{0b0011011, 0b101, 0b000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sraiw"{}},   \{0b0011011, 0b101, 0b010000\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceInstructionSet_a868d5bbf8dc7b8a7352a2cd9e7e66b20}\label{namespaceInstructionSet_a868d5bbf8dc7b8a7352a2cd9e7e66b20}} 
+\index{instruction_set@{instruction_set}!I3\_type\_instruction\_encoding\_map@{I3\_type\_instruction\_encoding\_map}}
+\index{I3\_type\_instruction\_encoding\_map@{I3\_type\_instruction\_encoding\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{I3\_type\_instruction\_encoding\_map}{I3\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1I3TypeInstructionEncoding}{I3\+Type\+Instruction\+Encoding}} $>$ Instruction\+Set\+::\+I3\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}ecall"{}},   \{0b1110011, 0b000, 0b0000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}ebreak"{}},  \{0b1110011, 0b001, 0b0000000\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceInstructionSet_ab046b55c7adf74913cf06c27f1f4c778}\label{namespaceInstructionSet_ab046b55c7adf74913cf06c27f1f4c778}} 
+\index{instruction_set@{instruction_set}!instruction\_encoding\_map@{instruction\_encoding\_map}}
+\index{instruction\_encoding\_map@{instruction\_encoding\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{instruction\_encoding\_map}{instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{structInstructionSet_1_1InstructionEncoding}{Instruction\+Encoding}}$>$ Instruction\+Set\+::instruction\+\_\+encoding\+\_\+map\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+A map that associates instruction names with their corresponding encoding. 
+
+This map stores the encoding details for various instructions, indexed by their names. \mbox{\Hypertarget{namespaceInstructionSet_ac47932d33ecbc839ace73301dc0214f2}\label{namespaceInstructionSet_ac47932d33ecbc839ace73301dc0214f2}} 
+\index{instruction_set@{instruction_set}!instruction\_opcode\_type\_map@{instruction\_opcode\_type\_map}}
+\index{instruction\_opcode\_type\_map@{instruction\_opcode\_type\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{instruction\_opcode\_type\_map}{instruction\_opcode\_type\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{namespaceInstructionSet_a6c93a7456b1b677ae5037dea762ffd6a}{Instruction\+Type}} $>$ Instruction\+Set\+::instruction\+\_\+opcode\+\_\+type\+\_\+map}
+
+
+
+A map that associates instruction names with their corresponding opcode type. 
+
+This map stores the opcode type for various instructions, indexed by their names. \mbox{\Hypertarget{namespaceInstructionSet_a997ac829bd6afd03b167561e37df5cf5}\label{namespaceInstructionSet_a997ac829bd6afd03b167561e37df5cf5}} 
+\index{instruction_set@{instruction_set}!instruction\_syntax\_map@{instruction\_syntax\_map}}
+\index{instruction\_syntax\_map@{instruction\_syntax\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{instruction\_syntax\_map}{instruction\_syntax\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{namespaceInstructionSet_a74997ed397636956578bef7bf8e9a74e}{Syntax\+Type}} $>$ $>$ Instruction\+Set\+::instruction\+\_\+syntax\+\_\+map}
+
+
+
+A map that associates instruction names with their expected syntax. 
+
+This map stores the expected syntax for various instructions, indexed by their names. \mbox{\Hypertarget{namespaceInstructionSet_abc35f0247eeb21642e14630816986377}\label{namespaceInstructionSet_abc35f0247eeb21642e14630816986377}} 
+\index{instruction_set@{instruction_set}!J\_type\_instruction\_encoding\_map@{J\_type\_instruction\_encoding\_map}}
+\index{J\_type\_instruction\_encoding\_map@{J\_type\_instruction\_encoding\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{J\_type\_instruction\_encoding\_map}{J\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1JTypeInstructionEncoding}{JType\+Instruction\+Encoding}} $>$ Instruction\+Set\+::\+J\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}jal"{}},     \{0b1101111\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceInstructionSet_ae7e15796bfc93498ee496411ac46b615}\label{namespaceInstructionSet_ae7e15796bfc93498ee496411ac46b615}} 
+\index{instruction_set@{instruction_set}!R\_type\_instruction\_encoding\_map@{R\_type\_instruction\_encoding\_map}}
+\index{R\_type\_instruction\_encoding\_map@{R\_type\_instruction\_encoding\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{R\_type\_instruction\_encoding\_map}{R\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1RTypeInstructionEncoding}{RType\+Instruction\+Encoding}} $>$ Instruction\+Set\+::\+R\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+\mbox{\Hypertarget{namespaceInstructionSet_a294d6a66b2cce53ae8b86d3af98ab21c}\label{namespaceInstructionSet_a294d6a66b2cce53ae8b86d3af98ab21c}} 
+\index{instruction_set@{instruction_set}!S\_type\_instruction\_encoding\_map@{S\_type\_instruction\_encoding\_map}}
+\index{S\_type\_instruction\_encoding\_map@{S\_type\_instruction\_encoding\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{S\_type\_instruction\_encoding\_map}{S\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1STypeInstructionEncoding}{SType\+Instruction\+Encoding}} $>$ Instruction\+Set\+::\+S\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sb"{}},      \{0b0100011, 0b000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sh"{}},      \{0b0100011, 0b001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sw"{}},      \{0b0100011, 0b010\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sd"{}},      \{0b0100011, 0b011\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceInstructionSet_aa87007facf76b1daab3bd188b77eab0f}\label{namespaceInstructionSet_aa87007facf76b1daab3bd188b77eab0f}} 
+\index{instruction_set@{instruction_set}!U\_type\_instruction\_encoding\_map@{U\_type\_instruction\_encoding\_map}}
+\index{U\_type\_instruction\_encoding\_map@{U\_type\_instruction\_encoding\_map}!instruction_set@{instruction_set}}
+\doxysubsubsection{\texorpdfstring{U\_type\_instruction\_encoding\_map}{U\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structInstructionSet_1_1UTypeInstructionEncoding}{UType\+Instruction\+Encoding}} $>$ Instruction\+Set\+::\+U\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lui"{}},     \{0b0110111\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}auipc"{}},   \{0b0010111\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

@@ -1,0 +1,15 @@
+<map id="include/vm/rvss/rvss_control_unit.h" name="include/vm/rvss/rvss_control_unit.h">
+<area shape="rect" id="node1" title="RVSS Control Unit." alt="" coords="366,5,522,47"/>
+<area shape="rect" id="node2" href="$control__unit__base_8h.html" title="Control unit base class definition." alt="" coords="363,95,525,121"/>
+<area shape="rect" id="node3" href="$registers_8h.html" title="Contains the definition of the RegisterFile class for managing registers in the simulator." alt="" coords="257,169,348,196"/>
+<area shape="rect" id="node9" href="$alu_8h.html" title="Contains the definition of the alu class for performing arithmetic and logic operations." alt="" coords="631,169,686,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,244,61,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="86,244,149,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="173,244,288,271"/>
+<area shape="rect" id="node7" title=" " alt="" coords="313,244,437,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="461,244,520,271"/>
+<area shape="rect" id="node10" title=" " alt="" coords="544,244,603,271"/>
+<area shape="rect" id="node11" title=" " alt="" coords="627,244,690,271"/>
+<area shape="rect" id="node12" title=" " alt="" coords="715,244,781,271"/>
+<area shape="rect" id="node13" title=" " alt="" coords="806,244,882,271"/>
+</map>

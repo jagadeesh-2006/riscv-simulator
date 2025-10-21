@@ -1,0 +1,61 @@
+\hypertarget{structErrorTracker}{}\doxysection{Error\+Tracker Struct Reference}
+\label{structErrorTracker}\index{ErrorTracker@{ErrorTracker}}
+
+
+Tracks parsing errors.  
+
+
+
+
+{\ttfamily \#include $<$parser.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{structErrorTracker_aa39e370c57a97c31cddfc4fb3193297e}{count}} = 0
+\begin{DoxyCompactList}\small\item\em The total number of errors. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structParseError}{Parse\+Error}} $>$ \mbox{\hyperlink{structErrorTracker_a06c0ef1d1a2e8062c085e89a57989264}{parse\+\_\+errors}}
+\begin{DoxyCompactList}\small\item\em A list of parse errors. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::variant$<$ \mbox{\hyperlink{structerrors_1_1SyntaxError}{errors\+::\+Syntax\+Error}}, \mbox{\hyperlink{structerrors_1_1UnexpectedTokenError}{errors\+::\+Unexpected\+Token\+Error}}, \mbox{\hyperlink{structerrors_1_1ImmediateOutOfRangeError}{errors\+::\+Immediate\+Out\+Of\+Range\+Error}}, \mbox{\hyperlink{structerrors_1_1MisalignedImmediateError}{errors\+::\+Misaligned\+Immediate\+Error}}, \mbox{\hyperlink{structerrors_1_1UnexpectedOperandError}{errors\+::\+Unexpected\+Operand\+Error}}, \mbox{\hyperlink{structerrors_1_1InvalidLabelRefError}{errors\+::\+Invalid\+Label\+Ref\+Error}}, \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError}{errors\+::\+Label\+Redefinition\+Error}}, \mbox{\hyperlink{structerrors_1_1InvalidRegisterError}{errors\+::\+Invalid\+Register\+Error}} $>$ $>$ \mbox{\hyperlink{structErrorTracker_a9ffa4ad5d07456b9bf7964d406ff629a}{all\+\_\+errors}}
+\begin{DoxyCompactList}\small\item\em A list of all errors, including syntax and semantic errors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tracks parsing errors. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structErrorTracker_a9ffa4ad5d07456b9bf7964d406ff629a}\label{structErrorTracker_a9ffa4ad5d07456b9bf7964d406ff629a}} 
+\index{ErrorTracker@{ErrorTracker}!all\_errors@{all\_errors}}
+\index{all\_errors@{all\_errors}!ErrorTracker@{ErrorTracker}}
+\doxysubsubsection{\texorpdfstring{all\_errors}{all\_errors}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::variant$<$ \mbox{\hyperlink{structerrors_1_1SyntaxError}{errors\+::\+Syntax\+Error}}, \mbox{\hyperlink{structerrors_1_1UnexpectedTokenError}{errors\+::\+Unexpected\+Token\+Error}}, \mbox{\hyperlink{structerrors_1_1ImmediateOutOfRangeError}{errors\+::\+Immediate\+Out\+Of\+Range\+Error}}, \mbox{\hyperlink{structerrors_1_1MisalignedImmediateError}{errors\+::\+Misaligned\+Immediate\+Error}}, \mbox{\hyperlink{structerrors_1_1UnexpectedOperandError}{errors\+::\+Unexpected\+Operand\+Error}}, \mbox{\hyperlink{structerrors_1_1InvalidLabelRefError}{errors\+::\+Invalid\+Label\+Ref\+Error}}, \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError}{errors\+::\+Label\+Redefinition\+Error}}, \mbox{\hyperlink{structerrors_1_1InvalidRegisterError}{errors\+::\+Invalid\+Register\+Error}} $>$ $>$ Error\+Tracker\+::all\+\_\+errors}
+
+
+
+A list of all errors, including syntax and semantic errors. 
+
+\mbox{\Hypertarget{structErrorTracker_aa39e370c57a97c31cddfc4fb3193297e}\label{structErrorTracker_aa39e370c57a97c31cddfc4fb3193297e}} 
+\index{ErrorTracker@{ErrorTracker}!count@{count}}
+\index{count@{count}!ErrorTracker@{ErrorTracker}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily unsigned int Error\+Tracker\+::count = 0}
+
+
+
+The total number of errors. 
+
+\mbox{\Hypertarget{structErrorTracker_a06c0ef1d1a2e8062c085e89a57989264}\label{structErrorTracker_a06c0ef1d1a2e8062c085e89a57989264}} 
+\index{ErrorTracker@{ErrorTracker}!parse\_errors@{parse\_errors}}
+\index{parse\_errors@{parse\_errors}!ErrorTracker@{ErrorTracker}}
+\doxysubsubsection{\texorpdfstring{parse\_errors}{parse\_errors}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structParseError}{Parse\+Error}}$>$ Error\+Tracker\+::parse\+\_\+errors}
+
+
+
+A list of parse errors. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/assembler/\mbox{\hyperlink{parser_8h}{parser.\+h}}\end{DoxyCompactItemize}

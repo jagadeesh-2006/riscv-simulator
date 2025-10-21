@@ -1,0 +1,168 @@
+\hypertarget{classNullMMIODevice}{}\doxysection{Null\+MMIODevice Class Reference}
+\label{classNullMMIODevice}\index{NullMMIODevice@{NullMMIODevice}}
+
+
+A simple MMIO device that does nothing.  
+
+
+
+
+{\ttfamily \#include $<$mmio\+\_\+devices.\+h$>$}
+
+
+
+Inheritance diagram for Null\+MMIODevice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classNullMMIODevice__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Null\+MMIODevice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classNullMMIODevice__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classNullMMIODevice_aa4b093620ac33855095b696eb0ae20fc}{read}} (uint32\+\_\+t offset) override
+\begin{DoxyCompactList}\small\item\em Read a value from the MMIO device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNullMMIODevice_ad10c9afda31705bd46c9d537f746a85a}{write}} (uint32\+\_\+t offset, uint32\+\_\+t value) override
+\begin{DoxyCompactList}\small\item\em Write a value to the MMIO device. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classNullMMIODevice_a8729e229bae85836add7a151cc3f1968}{is\+Ready}} () const override
+\begin{DoxyCompactList}\small\item\em Check if the MMIO device is ready for access. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classNullMMIODevice_a105428471ec2f25969932aadffb59d37}{size}} () const override
+\begin{DoxyCompactList}\small\item\em Get the size of the MMIO device. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classNullMMIODevice_af1e784af30e77f4b5d997cc9f1e645e0}{base\+Address}} () const override
+\begin{DoxyCompactList}\small\item\em Get the base address of the MMIO device. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{classNullMMIODevice_a6f41545b99ab665060afc253bedb7763}{name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the name of the MMIO device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple MMIO device that does nothing. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNullMMIODevice_af1e784af30e77f4b5d997cc9f1e645e0}\label{classNullMMIODevice_af1e784af30e77f4b5d997cc9f1e645e0}} 
+\index{NullMMIODevice@{NullMMIODevice}!baseAddress@{baseAddress}}
+\index{baseAddress@{baseAddress}!NullMMIODevice@{NullMMIODevice}}
+\doxysubsubsection{\texorpdfstring{baseAddress()}{baseAddress()}}
+{\footnotesize\ttfamily uint32\+\_\+t Null\+MMIODevice\+::base\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the base address of the MMIO device. 
+
+\begin{DoxyReturn}{Returns}
+The base address of the device. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMMIODevice_ab5d704272d2cf6d18cda4514110c7879}{MMIODevice}}.
+
+\mbox{\Hypertarget{classNullMMIODevice_a8729e229bae85836add7a151cc3f1968}\label{classNullMMIODevice_a8729e229bae85836add7a151cc3f1968}} 
+\index{NullMMIODevice@{NullMMIODevice}!isReady@{isReady}}
+\index{isReady@{isReady}!NullMMIODevice@{NullMMIODevice}}
+\doxysubsubsection{\texorpdfstring{isReady()}{isReady()}}
+{\footnotesize\ttfamily bool Null\+MMIODevice\+::is\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the MMIO device is ready for access. 
+
+\begin{DoxyReturn}{Returns}
+True if the device is ready, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMMIODevice_a8ac879e79e627377225ba4deadff8cf2}{MMIODevice}}.
+
+\mbox{\Hypertarget{classNullMMIODevice_a6f41545b99ab665060afc253bedb7763}\label{classNullMMIODevice_a6f41545b99ab665060afc253bedb7763}} 
+\index{NullMMIODevice@{NullMMIODevice}!name@{name}}
+\index{name@{name}!NullMMIODevice@{NullMMIODevice}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily const char$\ast$ Null\+MMIODevice\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the name of the MMIO device. 
+
+\begin{DoxyReturn}{Returns}
+The name of the device. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMMIODevice_a60ab653bdb433f3e522a7a72f9dcba1c}{MMIODevice}}.
+
+\mbox{\Hypertarget{classNullMMIODevice_aa4b093620ac33855095b696eb0ae20fc}\label{classNullMMIODevice_aa4b093620ac33855095b696eb0ae20fc}} 
+\index{NullMMIODevice@{NullMMIODevice}!read@{read}}
+\index{read@{read}!NullMMIODevice@{NullMMIODevice}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint32\+\_\+t Null\+MMIODevice\+::read (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Read a value from the MMIO device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & The offset to read from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value read from the device. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMMIODevice_a6f9adf6e93f19bbfa338e7949a9883e3}{MMIODevice}}.
+
+\mbox{\Hypertarget{classNullMMIODevice_a105428471ec2f25969932aadffb59d37}\label{classNullMMIODevice_a105428471ec2f25969932aadffb59d37}} 
+\index{NullMMIODevice@{NullMMIODevice}!size@{size}}
+\index{size@{size}!NullMMIODevice@{NullMMIODevice}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily uint32\+\_\+t Null\+MMIODevice\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the size of the MMIO device. 
+
+\begin{DoxyReturn}{Returns}
+The size of the device in bytes. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMMIODevice_a35d491d39a061f7f8b6651738c174308}{MMIODevice}}.
+
+\mbox{\Hypertarget{classNullMMIODevice_ad10c9afda31705bd46c9d537f746a85a}\label{classNullMMIODevice_ad10c9afda31705bd46c9d537f746a85a}} 
+\index{NullMMIODevice@{NullMMIODevice}!write@{write}}
+\index{write@{write}!NullMMIODevice@{NullMMIODevice}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Null\+MMIODevice\+::write (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{offset,  }\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Write a value to the MMIO device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & The offset to write to. \\
+\hline
+{\em value} & The value to write. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMMIODevice_a0de699f0b9bb230e93f77eaef471d78f}{MMIODevice}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/vm/\mbox{\hyperlink{mmio__devices_8h}{mmio\+\_\+devices.\+h}}\end{DoxyCompactItemize}

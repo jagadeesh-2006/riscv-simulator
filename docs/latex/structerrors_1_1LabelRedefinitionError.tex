@@ -1,0 +1,125 @@
+\hypertarget{structerrors_1_1LabelRedefinitionError}{}\doxysection{errors\+::Label\+Redefinition\+Error Struct Reference}
+\label{structerrors_1_1LabelRedefinitionError}\index{errors::LabelRedefinitionError@{errors::LabelRedefinitionError}}
+
+
+Represents an error caused by redefining a previously defined label.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a1cdcda2bb5edd8014e684e44c94ab036}{Label\+Redefinition\+Error}} (std\+::string \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a01295352c86d3ec213ac08ebdec38573}{main\+\_\+message}}, std\+::string \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a8ae466157b682b998a0b3e710cda2010}{sub\+\_\+message}}, std\+::string \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a07c0ca45c5a48bb8ce5488865e13586e}{filename}}, unsigned int \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a93199b6bc9add4632d27a912c0e7aedd}{line\+\_\+number}}, unsigned int \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a9dad3c7f197f4b8e6a457461b12eaf2c}{column\+\_\+number}}, std\+::string \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a7739f47853359e829cb1f2aaaeb0a699}{line\+\_\+text}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a01295352c86d3ec213ac08ebdec38573}{main\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Main error message. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a8ae466157b682b998a0b3e710cda2010}{sub\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Sub error message with additional details. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a07c0ca45c5a48bb8ce5488865e13586e}{filename}}
+\begin{DoxyCompactList}\small\item\em Filename where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a93199b6bc9add4632d27a912c0e7aedd}{line\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Line number where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a9dad3c7f197f4b8e6a457461b12eaf2c}{column\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Column number where the error occurred. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_a7739f47853359e829cb1f2aaaeb0a699}{line\+\_\+text}}
+\begin{DoxyCompactList}\small\item\em Text of the line where the error occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError_ab33047f155b28f42f59c13371e0a2894}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError}{Label\+Redefinition\+Error}} \&error)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an error caused by redefining a previously defined label. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structerrors_1_1LabelRedefinitionError_a1cdcda2bb5edd8014e684e44c94ab036}\label{structerrors_1_1LabelRedefinitionError_a1cdcda2bb5edd8014e684e44c94ab036}} 
+\index{errors::LabelRedefinitionError@{errors::LabelRedefinitionError}!LabelRedefinitionError@{LabelRedefinitionError}}
+\index{LabelRedefinitionError@{LabelRedefinitionError}!errors::LabelRedefinitionError@{errors::LabelRedefinitionError}}
+\doxysubsubsection{\texorpdfstring{LabelRedefinitionError()}{LabelRedefinitionError()}}
+{\footnotesize\ttfamily errors\+::\+Label\+Redefinition\+Error\+::\+Label\+Redefinition\+Error (\begin{DoxyParamCaption}\item[{std\+::string}]{main\+\_\+message,  }\item[{std\+::string}]{sub\+\_\+message,  }\item[{std\+::string}]{filename,  }\item[{unsigned int}]{line\+\_\+number,  }\item[{unsigned int}]{column\+\_\+number,  }\item[{std\+::string}]{line\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structerrors_1_1LabelRedefinitionError_ab33047f155b28f42f59c13371e0a2894}\label{structerrors_1_1LabelRedefinitionError_ab33047f155b28f42f59c13371e0a2894}} 
+\index{errors::LabelRedefinitionError@{errors::LabelRedefinitionError}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!errors::LabelRedefinitionError@{errors::LabelRedefinitionError}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{structerrors_1_1LabelRedefinitionError}{Label\+Redefinition\+Error}} \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structerrors_1_1LabelRedefinitionError_a9dad3c7f197f4b8e6a457461b12eaf2c}\label{structerrors_1_1LabelRedefinitionError_a9dad3c7f197f4b8e6a457461b12eaf2c}} 
+\index{errors::LabelRedefinitionError@{errors::LabelRedefinitionError}!column\_number@{column\_number}}
+\index{column\_number@{column\_number}!errors::LabelRedefinitionError@{errors::LabelRedefinitionError}}
+\doxysubsubsection{\texorpdfstring{column\_number}{column\_number}}
+{\footnotesize\ttfamily unsigned int errors\+::\+Label\+Redefinition\+Error\+::column\+\_\+number}
+
+
+
+Column number where the error occurred. 
+
+\mbox{\Hypertarget{structerrors_1_1LabelRedefinitionError_a07c0ca45c5a48bb8ce5488865e13586e}\label{structerrors_1_1LabelRedefinitionError_a07c0ca45c5a48bb8ce5488865e13586e}} 
+\index{errors::LabelRedefinitionError@{errors::LabelRedefinitionError}!filename@{filename}}
+\index{filename@{filename}!errors::LabelRedefinitionError@{errors::LabelRedefinitionError}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily std\+::string errors\+::\+Label\+Redefinition\+Error\+::filename}
+
+
+
+Filename where the error occurred. 
+
+\mbox{\Hypertarget{structerrors_1_1LabelRedefinitionError_a93199b6bc9add4632d27a912c0e7aedd}\label{structerrors_1_1LabelRedefinitionError_a93199b6bc9add4632d27a912c0e7aedd}} 
+\index{errors::LabelRedefinitionError@{errors::LabelRedefinitionError}!line\_number@{line\_number}}
+\index{line\_number@{line\_number}!errors::LabelRedefinitionError@{errors::LabelRedefinitionError}}
+\doxysubsubsection{\texorpdfstring{line\_number}{line\_number}}
+{\footnotesize\ttfamily unsigned int errors\+::\+Label\+Redefinition\+Error\+::line\+\_\+number}
+
+
+
+Line number where the error occurred. 
+
+\mbox{\Hypertarget{structerrors_1_1LabelRedefinitionError_a7739f47853359e829cb1f2aaaeb0a699}\label{structerrors_1_1LabelRedefinitionError_a7739f47853359e829cb1f2aaaeb0a699}} 
+\index{errors::LabelRedefinitionError@{errors::LabelRedefinitionError}!line\_text@{line\_text}}
+\index{line\_text@{line\_text}!errors::LabelRedefinitionError@{errors::LabelRedefinitionError}}
+\doxysubsubsection{\texorpdfstring{line\_text}{line\_text}}
+{\footnotesize\ttfamily std\+::string errors\+::\+Label\+Redefinition\+Error\+::line\+\_\+text}
+
+
+
+Text of the line where the error occurred. 
+
+\mbox{\Hypertarget{structerrors_1_1LabelRedefinitionError_a01295352c86d3ec213ac08ebdec38573}\label{structerrors_1_1LabelRedefinitionError_a01295352c86d3ec213ac08ebdec38573}} 
+\index{errors::LabelRedefinitionError@{errors::LabelRedefinitionError}!main\_message@{main\_message}}
+\index{main\_message@{main\_message}!errors::LabelRedefinitionError@{errors::LabelRedefinitionError}}
+\doxysubsubsection{\texorpdfstring{main\_message}{main\_message}}
+{\footnotesize\ttfamily std\+::string errors\+::\+Label\+Redefinition\+Error\+::main\+\_\+message}
+
+
+
+Main error message. 
+
+\mbox{\Hypertarget{structerrors_1_1LabelRedefinitionError_a8ae466157b682b998a0b3e710cda2010}\label{structerrors_1_1LabelRedefinitionError_a8ae466157b682b998a0b3e710cda2010}} 
+\index{errors::LabelRedefinitionError@{errors::LabelRedefinitionError}!sub\_message@{sub\_message}}
+\index{sub\_message@{sub\_message}!errors::LabelRedefinitionError@{errors::LabelRedefinitionError}}
+\doxysubsubsection{\texorpdfstring{sub\_message}{sub\_message}}
+{\footnotesize\ttfamily std\+::string errors\+::\+Label\+Redefinition\+Error\+::sub\+\_\+message}
+
+
+
+Sub error message with additional details. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/assembler/\mbox{\hyperlink{errors_8h}{errors.\+h}}\end{DoxyCompactItemize}

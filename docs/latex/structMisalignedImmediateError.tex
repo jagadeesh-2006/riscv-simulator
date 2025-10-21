@@ -1,0 +1,125 @@
+\hypertarget{structMisalignedImmediateError}{}\doxysection{Misaligned\+Immediate\+Error Struct Reference}
+\label{structMisalignedImmediateError}\index{MisalignedImmediateError@{MisalignedImmediateError}}
+
+
+Represents an error caused by an immediate value being misaligned.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMisalignedImmediateError_a7fe9131a8822a9bbc092d08acc9afb31}{Misaligned\+Immediate\+Error}} (std\+::string \mbox{\hyperlink{structMisalignedImmediateError_a87d4867630d76f4229d65730eff82a5e}{main\+\_\+message}}, std\+::string \mbox{\hyperlink{structMisalignedImmediateError_a917b1b805b057ce0ee96234c793ef598}{sub\+\_\+message}}, std\+::string \mbox{\hyperlink{structMisalignedImmediateError_a1ed13e32762852870b4275b61c4db177}{filename}}, unsigned int \mbox{\hyperlink{structMisalignedImmediateError_a4a44eaed550a7ad12039fd4af79b7096}{line\+\_\+number}}, unsigned int \mbox{\hyperlink{structMisalignedImmediateError_a174c14fdf42fdf234c27925c652121fd}{column\+\_\+number}}, std\+::string \mbox{\hyperlink{structMisalignedImmediateError_a31ee55aa2e12347d3a25a0e91f8cda89}{line\+\_\+text}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structMisalignedImmediateError_a87d4867630d76f4229d65730eff82a5e}{main\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Main error message. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structMisalignedImmediateError_a917b1b805b057ce0ee96234c793ef598}{sub\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Sub error message with additional details. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structMisalignedImmediateError_a1ed13e32762852870b4275b61c4db177}{filename}}
+\begin{DoxyCompactList}\small\item\em Filename where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structMisalignedImmediateError_a4a44eaed550a7ad12039fd4af79b7096}{line\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Line number where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structMisalignedImmediateError_a174c14fdf42fdf234c27925c652121fd}{column\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Column number where the error occurred. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structMisalignedImmediateError_a31ee55aa2e12347d3a25a0e91f8cda89}{line\+\_\+text}}
+\begin{DoxyCompactList}\small\item\em Text of the line where the error occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{structMisalignedImmediateError_a2465fce78d16fd21f0bfdf615ff69100}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structMisalignedImmediateError}{Misaligned\+Immediate\+Error}} \&error)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an error caused by an immediate value being misaligned. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structMisalignedImmediateError_a7fe9131a8822a9bbc092d08acc9afb31}\label{structMisalignedImmediateError_a7fe9131a8822a9bbc092d08acc9afb31}} 
+\index{MisalignedImmediateError@{MisalignedImmediateError}!MisalignedImmediateError@{MisalignedImmediateError}}
+\index{MisalignedImmediateError@{MisalignedImmediateError}!MisalignedImmediateError@{MisalignedImmediateError}}
+\doxysubsubsection{\texorpdfstring{MisalignedImmediateError()}{MisalignedImmediateError()}}
+{\footnotesize\ttfamily Misaligned\+Immediate\+Error\+::\+Misaligned\+Immediate\+Error (\begin{DoxyParamCaption}\item[{std\+::string}]{main\+\_\+message,  }\item[{std\+::string}]{sub\+\_\+message,  }\item[{std\+::string}]{filename,  }\item[{unsigned int}]{line\+\_\+number,  }\item[{unsigned int}]{column\+\_\+number,  }\item[{std\+::string}]{line\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structMisalignedImmediateError_a2465fce78d16fd21f0bfdf615ff69100}\label{structMisalignedImmediateError_a2465fce78d16fd21f0bfdf615ff69100}} 
+\index{MisalignedImmediateError@{MisalignedImmediateError}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!MisalignedImmediateError@{MisalignedImmediateError}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{structMisalignedImmediateError}{Misaligned\+Immediate\+Error}} \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structMisalignedImmediateError_a174c14fdf42fdf234c27925c652121fd}\label{structMisalignedImmediateError_a174c14fdf42fdf234c27925c652121fd}} 
+\index{MisalignedImmediateError@{MisalignedImmediateError}!column\_number@{column\_number}}
+\index{column\_number@{column\_number}!MisalignedImmediateError@{MisalignedImmediateError}}
+\doxysubsubsection{\texorpdfstring{column\_number}{column\_number}}
+{\footnotesize\ttfamily unsigned int Misaligned\+Immediate\+Error\+::column\+\_\+number}
+
+
+
+Column number where the error occurred. 
+
+\mbox{\Hypertarget{structMisalignedImmediateError_a1ed13e32762852870b4275b61c4db177}\label{structMisalignedImmediateError_a1ed13e32762852870b4275b61c4db177}} 
+\index{MisalignedImmediateError@{MisalignedImmediateError}!filename@{filename}}
+\index{filename@{filename}!MisalignedImmediateError@{MisalignedImmediateError}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily std\+::string Misaligned\+Immediate\+Error\+::filename}
+
+
+
+Filename where the error occurred. 
+
+\mbox{\Hypertarget{structMisalignedImmediateError_a4a44eaed550a7ad12039fd4af79b7096}\label{structMisalignedImmediateError_a4a44eaed550a7ad12039fd4af79b7096}} 
+\index{MisalignedImmediateError@{MisalignedImmediateError}!line\_number@{line\_number}}
+\index{line\_number@{line\_number}!MisalignedImmediateError@{MisalignedImmediateError}}
+\doxysubsubsection{\texorpdfstring{line\_number}{line\_number}}
+{\footnotesize\ttfamily unsigned int Misaligned\+Immediate\+Error\+::line\+\_\+number}
+
+
+
+Line number where the error occurred. 
+
+\mbox{\Hypertarget{structMisalignedImmediateError_a31ee55aa2e12347d3a25a0e91f8cda89}\label{structMisalignedImmediateError_a31ee55aa2e12347d3a25a0e91f8cda89}} 
+\index{MisalignedImmediateError@{MisalignedImmediateError}!line\_text@{line\_text}}
+\index{line\_text@{line\_text}!MisalignedImmediateError@{MisalignedImmediateError}}
+\doxysubsubsection{\texorpdfstring{line\_text}{line\_text}}
+{\footnotesize\ttfamily std\+::string Misaligned\+Immediate\+Error\+::line\+\_\+text}
+
+
+
+Text of the line where the error occurred. 
+
+\mbox{\Hypertarget{structMisalignedImmediateError_a87d4867630d76f4229d65730eff82a5e}\label{structMisalignedImmediateError_a87d4867630d76f4229d65730eff82a5e}} 
+\index{MisalignedImmediateError@{MisalignedImmediateError}!main\_message@{main\_message}}
+\index{main\_message@{main\_message}!MisalignedImmediateError@{MisalignedImmediateError}}
+\doxysubsubsection{\texorpdfstring{main\_message}{main\_message}}
+{\footnotesize\ttfamily std\+::string Misaligned\+Immediate\+Error\+::main\+\_\+message}
+
+
+
+Main error message. 
+
+\mbox{\Hypertarget{structMisalignedImmediateError_a917b1b805b057ce0ee96234c793ef598}\label{structMisalignedImmediateError_a917b1b805b057ce0ee96234c793ef598}} 
+\index{MisalignedImmediateError@{MisalignedImmediateError}!sub\_message@{sub\_message}}
+\index{sub\_message@{sub\_message}!MisalignedImmediateError@{MisalignedImmediateError}}
+\doxysubsubsection{\texorpdfstring{sub\_message}{sub\_message}}
+{\footnotesize\ttfamily std\+::string Misaligned\+Immediate\+Error\+::sub\+\_\+message}
+
+
+
+Sub error message with additional details. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/assembler/\mbox{\hyperlink{errors_8h}{errors.\+h}}\end{DoxyCompactItemize}

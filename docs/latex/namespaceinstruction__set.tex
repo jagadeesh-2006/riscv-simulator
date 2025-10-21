@@ -1,0 +1,731 @@
+\hypertarget{namespaceinstruction__set}{}\doxysection{instruction\+\_\+set Namespace Reference}
+\label{namespaceinstruction__set}\index{instruction\_set@{instruction\_set}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1RTypeInstructionEncoding}{RType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1I1TypeInstructionEncoding}{I1\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1I2TypeInstructionEncoding}{I2\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1I3TypeInstructionEncoding}{I3\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1STypeInstructionEncoding}{SType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1BTypeInstructionEncoding}{BType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1UTypeInstructionEncoding}{UType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1JTypeInstructionEncoding}{JType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1CSR__RTypeInstructionEncoding}{CSR\+\_\+\+RType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1CSR__ITypeInstructionEncoding}{CSR\+\_\+\+IType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1FDRTypeInstructionEncoding}{FDRType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1FDR1TypeInstructionEncoding}{FDR1\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1FDR2TypeInstructionEncoding}{FDR2\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1FDR3TypeInstructionEncoding}{FDR3\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1FDR4TypeInstructionEncoding}{FDR4\+Type\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1FDITypeInstructionEncoding}{FDIType\+Instruction\+Encoding}}
+\item 
+struct \mbox{\hyperlink{structinstruction__set_1_1FDSTypeInstructionEncoding}{FDSType\+Instruction\+Encoding}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462}{Syntax\+Type}} \{ \newline
+\mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a41dbb99a6896d9e96d14138265da5221}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a6928cbdc3a5078e1dc0ad9ca43016922}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+I}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a54fc6e8c9d10a97ed4a5e7d0ab9553eb}{O\+\_\+\+GPR\+\_\+\+C\+\_\+I}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a364880ae1f94f6bc2994640139c45f40}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+IL}}
+, \newline
+\mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462af6223c5677027b1fc3b40e9cc9c10cd9}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+DL}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ad0b5df5218c775d236e94b953634aaca}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+IL}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ac4900375e3b89f5e09e1f06464fa79b9}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+DL}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ad8a1a972ad133831dff5a091d86767c6}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+I\+\_\+\+LP\+\_\+\+GPR\+\_\+\+RP}}
+, \newline
+\mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462af186217753c37b9b9f958d906208506e}{O}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462abbd7b8a2e3f2db9d4a03e9f243e8c9bb}{PSEUDO}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a19a3d4f96e3e9f085d10a229c8566bbf}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+CSR\+\_\+\+C\+\_\+\+GPR}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a1d2b79a1e7e329b52e9c03db7cb6dd2e}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+CSR\+\_\+\+C\+\_\+I}}
+, \newline
+\mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462aa9a5f4479bf2405b3bf315c47b0cf3b0}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a53ca5a3860cb4fab0329153e7e42f1a8}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+RM}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a35456c8df1be6e0369b59d2dcc5b5e6d}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ab4539ac8d05f6bcf1c6a3f5f4fc33d3f}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+RM}}
+, \newline
+\mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a26c0ed632be719d001499f10cf5b8a16}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a982d3329005e92444af5a450566deed9}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+RM}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462accff7c0457276e403b2fa1a4e941c155}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+GPR}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a32cba8a0330454d639bc8ed709dce80a}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+RM}}
+, \newline
+\mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a7c56ceaf0b4fd799a397e31225ad2067}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+FPR}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a900aef86308c4bf784c935b1c2132221}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+RM}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a4acbd7a3820c4fe37725ec992ebe084a}{O\+\_\+\+GPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR}}
+, \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a4b80d7d1223745bdf966288df20f1fa3}{O\+\_\+\+FPR\+\_\+\+C\+\_\+\+I\+\_\+\+LP\+\_\+\+GPR\+\_\+\+RP}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum that represents different syntax types for instructions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a684c8ea1bb0cd5f2fcdb698286ce49bd}{is\+Valid\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a2dbf58ce982702b5ebd65bedbad55f1a}{is\+Valid\+RType\+Instruction}} (const std\+::string \&name)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_ac10fca95259b7db81e9d64605dd6d7fd}{is\+Valid\+IType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a2686c6cb47421100c0845826a00d6686}{is\+Valid\+I1\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a1157d60c5ad00551432b62c74dce93ce}{is\+Valid\+I2\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_ab009114befd859670c1b6a60a4d4a675}{is\+Valid\+I3\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a402f2c32c5f3981e732c5a7bada97398}{is\+Valid\+SType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a9f7fd6439b8f1fdf3fa6c4b846161a60}{is\+Valid\+BType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a72120155b1b49e86de5a21a140757e0c}{is\+Valid\+UType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a40834369e5972193df7c74fa8d3cd7c4}{is\+Valid\+JType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_adf2c87a1fa7b27e0012e3eaf1f575538}{is\+Valid\+Pseudo\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a3e26615428ea0891ded649073e440d88}{is\+Valid\+Base\+Extension\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a390f2245d92958d7d6e67df52fdeab34}{is\+Valid\+CSRRType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_ac19e70a283ee2e1b15125faad66ba23e}{is\+Valid\+CSRIType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a200e08acd1cac12dc89b25fba97fa6ac}{is\+Valid\+CSRInstruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a1dd7f86382bd6577c7b880367f5912fa}{is\+Valid\+FDRType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a41eeac0550849ef37fa33ff84cf76a2f}{is\+Valid\+FDR1\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a708f1663efb124992763e7df4a28345e}{is\+Valid\+FDR2\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_ab0c4f49b586d5b40444c37be298aad10}{is\+Valid\+FDR3\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a431026007ab52b5f443f62b0282a5632}{is\+Valid\+FDR4\+Type\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_afafd6b6e78053bc61fb215a4e3134ca3}{is\+Valid\+FDIType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_aab688f810da37e8780510aab2f2232a0}{is\+Valid\+FDSType\+Instruction}} (const std\+::string \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_aa2718ca4cc03370f5c3d248ed59028b6}{is\+FInstruction}} (const uint32\+\_\+t \&instruction)
+\item 
+bool \mbox{\hyperlink{namespaceinstruction__set_a5303fb0dd8dd34c268231c47f85a02fc}{is\+DInstruction}} (const uint32\+\_\+t \&instruction)
+\item 
+std\+::string \mbox{\hyperlink{namespaceinstruction__set_a605befee774c8275dccbdf096ac5b66f}{get\+Expected\+Syntaxes}} (const std\+::string \&opcode)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1RTypeInstructionEncoding}{RType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a859191af4ff841c4c7486a6a19c7fa7a}{R\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1I1TypeInstructionEncoding}{I1\+Type\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_ad362b1b3167d50a18c67c280b54012b3}{I1\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1I2TypeInstructionEncoding}{I2\+Type\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a51290da536b0f0b8fad0e76c5d63300c}{I2\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1I3TypeInstructionEncoding}{I3\+Type\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a1e1482a4d9c3475f9750286a89db56ac}{I3\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1STypeInstructionEncoding}{SType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_ab50cca829f0e03ebbe8b71abc0145f8c}{S\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1BTypeInstructionEncoding}{BType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a3e35acfc82b9e41676104e2747733de6}{B\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1UTypeInstructionEncoding}{UType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a8dc1d0372413156d015ff8f7e85a4efe}{U\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1JTypeInstructionEncoding}{JType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a374dcbb396c16fc22f77466bff4f7861}{J\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1CSR__RTypeInstructionEncoding}{CSR\+\_\+\+RType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_ae1beeefc4c920a816ef63d2cc2394b97}{CSR\+\_\+\+R\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1CSR__ITypeInstructionEncoding}{CSR\+\_\+\+IType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a4073c9c96c0ad7b56852d98859e1baa3}{CSR\+\_\+\+I\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDRTypeInstructionEncoding}{FDRType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a5cf78416d8c2c005a6fd3c9caead1ff2}{F\+\_\+\+D\+\_\+\+R\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDR1TypeInstructionEncoding}{FDR1\+Type\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a4bc401050f099acc0422f451287d5da1}{F\+\_\+\+D\+\_\+\+R1\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDR2TypeInstructionEncoding}{FDR2\+Type\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a4ff8e79787a2060e8e8b53c20348cb66}{F\+\_\+\+D\+\_\+\+R2\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDR3TypeInstructionEncoding}{FDR3\+Type\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_add9dd2648cc982b1271c28b41c99e18b}{F\+\_\+\+D\+\_\+\+R3\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDR4TypeInstructionEncoding}{FDR4\+Type\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a430c1ddcd83a4d8f4f2d6686e4be53d5}{F\+\_\+\+D\+\_\+\+R4\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDITypeInstructionEncoding}{FDIType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_af5c5f93de8a03f2601cc9f734101d966}{F\+\_\+\+D\+\_\+\+I\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDSTypeInstructionEncoding}{FDSType\+Instruction\+Encoding}} $>$ \mbox{\hyperlink{namespaceinstruction__set_a5d37d30556dd68b58a56ac0e134aa17c}{F\+\_\+\+D\+\_\+\+S\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462}{Syntax\+Type}} $>$ $>$ \mbox{\hyperlink{namespaceinstruction__set_a5e20a1ab57999f19806854d6ccceeedb}{instruction\+\_\+syntax\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em A map that associates instruction names with their expected syntax. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462}} 
+\index{instruction\_set@{instruction\_set}!SyntaxType@{SyntaxType}}
+\index{SyntaxType@{SyntaxType}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{SyntaxType}{SyntaxType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462}{instruction\+\_\+set\+::\+Syntax\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum that represents different syntax types for instructions. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_GPR\_C\_GPR@{O\_GPR\_C\_GPR\_C\_GPR}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_GPR\_C\_GPR@{O\_GPR\_C\_GPR\_C\_GPR}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a41dbb99a6896d9e96d14138265da5221}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a41dbb99a6896d9e96d14138265da5221}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR&Opcode general-\/register , general-\/register , register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_GPR\_C\_I@{O\_GPR\_C\_GPR\_C\_I}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_GPR\_C\_I@{O\_GPR\_C\_GPR\_C\_I}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a6928cbdc3a5078e1dc0ad9ca43016922}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a6928cbdc3a5078e1dc0ad9ca43016922}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+I&Opcode general-\/register , general-\/register , immediate. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_I@{O\_GPR\_C\_I}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_I@{O\_GPR\_C\_I}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a54fc6e8c9d10a97ed4a5e7d0ab9553eb}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a54fc6e8c9d10a97ed4a5e7d0ab9553eb}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+I&Opcode general-\/register , immediate. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_GPR\_C\_IL@{O\_GPR\_C\_GPR\_C\_IL}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_GPR\_C\_IL@{O\_GPR\_C\_GPR\_C\_IL}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a364880ae1f94f6bc2994640139c45f40}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a364880ae1f94f6bc2994640139c45f40}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+IL&Opcode general-\/register , general-\/register , immediate , instruction\+\_\+label. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_GPR\_C\_DL@{O\_GPR\_C\_GPR\_C\_DL}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_GPR\_C\_DL@{O\_GPR\_C\_GPR\_C\_DL}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462af6223c5677027b1fc3b40e9cc9c10cd9}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462af6223c5677027b1fc3b40e9cc9c10cd9}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+DL&Opcode register , register , immediate , data\+\_\+label. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_IL@{O\_GPR\_C\_IL}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_IL@{O\_GPR\_C\_IL}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ad0b5df5218c775d236e94b953634aaca}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ad0b5df5218c775d236e94b953634aaca}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+IL&Opcode register , instruction\+\_\+label. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_DL@{O\_GPR\_C\_DL}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_DL@{O\_GPR\_C\_DL}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ac4900375e3b89f5e09e1f06464fa79b9}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ac4900375e3b89f5e09e1f06464fa79b9}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+DL&Opcode register , data\+\_\+label. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_I\_LP\_GPR\_RP@{O\_GPR\_C\_I\_LP\_GPR\_RP}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_I\_LP\_GPR\_RP@{O\_GPR\_C\_I\_LP\_GPR\_RP}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ad8a1a972ad133831dff5a091d86767c6}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ad8a1a972ad133831dff5a091d86767c6}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+I\+\_\+\+LP\+\_\+\+GPR\+\_\+\+RP&Opcode register , immediate , lparen ( register )rparen. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O@{O}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O@{O}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462af186217753c37b9b9f958d906208506e}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462af186217753c37b9b9f958d906208506e}} 
+O&Opcode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PSEUDO@{PSEUDO}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!PSEUDO@{PSEUDO}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462abbd7b8a2e3f2db9d4a03e9f243e8c9bb}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462abbd7b8a2e3f2db9d4a03e9f243e8c9bb}} 
+PSEUDO&Pseudo instruction. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_CSR\_C\_GPR@{O\_GPR\_C\_CSR\_C\_GPR}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_CSR\_C\_GPR@{O\_GPR\_C\_CSR\_C\_GPR}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a19a3d4f96e3e9f085d10a229c8566bbf}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a19a3d4f96e3e9f085d10a229c8566bbf}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+CSR\+\_\+\+C\+\_\+\+GPR&Opcode general-\/register , csr , general-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_CSR\_C\_I@{O\_GPR\_C\_CSR\_C\_I}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_CSR\_C\_I@{O\_GPR\_C\_CSR\_C\_I}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a1d2b79a1e7e329b52e9c03db7cb6dd2e}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a1d2b79a1e7e329b52e9c03db7cb6dd2e}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+CSR\+\_\+\+C\+\_\+I&Opcode general-\/register , csr , immediate. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR@{O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR@{O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462aa9a5f4479bf2405b3bf315c47b0cf3b0}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462aa9a5f4479bf2405b3bf315c47b0cf3b0}} 
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR&Opcode floating-\/point-\/register , floating-\/point-\/register , floating-\/point-\/register , floating-\/point-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR\_C\_RM@{O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR\_C\_RM}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR\_C\_RM@{O\_FPR\_C\_FPR\_C\_FPR\_C\_FPR\_C\_RM}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a53ca5a3860cb4fab0329153e7e42f1a8}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a53ca5a3860cb4fab0329153e7e42f1a8}} 
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+RM&Opcode floating-\/point-\/register , floating-\/point-\/register , floating-\/point-\/register , rounding\+\_\+mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_FPR\_C\_FPR@{O\_FPR\_C\_FPR\_C\_FPR}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_FPR\_C\_FPR\_C\_FPR@{O\_FPR\_C\_FPR\_C\_FPR}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a35456c8df1be6e0369b59d2dcc5b5e6d}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a35456c8df1be6e0369b59d2dcc5b5e6d}} 
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR&Opcode floating-\/point-\/register , floating-\/point-\/register , floating-\/point-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_FPR\_C\_FPR\_C\_RM@{O\_FPR\_C\_FPR\_C\_FPR\_C\_RM}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_FPR\_C\_FPR\_C\_FPR\_C\_RM@{O\_FPR\_C\_FPR\_C\_FPR\_C\_RM}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ab4539ac8d05f6bcf1c6a3f5f4fc33d3f}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462ab4539ac8d05f6bcf1c6a3f5f4fc33d3f}} 
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+RM&Opcode floating-\/point-\/register , floating-\/point-\/register , floating-\/point-\/register , rounding\+\_\+mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_FPR@{O\_FPR\_C\_FPR}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_FPR\_C\_FPR@{O\_FPR\_C\_FPR}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a26c0ed632be719d001499f10cf5b8a16}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a26c0ed632be719d001499f10cf5b8a16}} 
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR&Opcode floating-\/point-\/register , floating-\/point-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_FPR\_C\_RM@{O\_FPR\_C\_FPR\_C\_RM}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_FPR\_C\_FPR\_C\_RM@{O\_FPR\_C\_FPR\_C\_RM}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a982d3329005e92444af5a450566deed9}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a982d3329005e92444af5a450566deed9}} 
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+RM&Opcode floating-\/point-\/register , floating-\/point-\/register , rounding\+\_\+mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_GPR@{O\_FPR\_C\_GPR}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_FPR\_C\_GPR@{O\_FPR\_C\_GPR}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462accff7c0457276e403b2fa1a4e941c155}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462accff7c0457276e403b2fa1a4e941c155}} 
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+GPR&Opcode floating-\/point-\/register , general-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_GPR\_C\_RM@{O\_FPR\_C\_GPR\_C\_RM}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_FPR\_C\_GPR\_C\_RM@{O\_FPR\_C\_GPR\_C\_RM}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a32cba8a0330454d639bc8ed709dce80a}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a32cba8a0330454d639bc8ed709dce80a}} 
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+GPR\+\_\+\+C\+\_\+\+RM&Opcode floating-\/point-\/register , general-\/register , rounding\+\_\+mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_FPR@{O\_GPR\_C\_FPR}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_FPR@{O\_GPR\_C\_FPR}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a7c56ceaf0b4fd799a397e31225ad2067}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a7c56ceaf0b4fd799a397e31225ad2067}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+FPR&Opcode general-\/register , floating-\/point-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_FPR\_C\_RM@{O\_GPR\_C\_FPR\_C\_RM}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_FPR\_C\_RM@{O\_GPR\_C\_FPR\_C\_RM}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a900aef86308c4bf784c935b1c2132221}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a900aef86308c4bf784c935b1c2132221}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+RM&Opcode general-\/register , floating-\/point-\/register , rounding\+\_\+mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_GPR\_C\_FPR\_C\_FPR@{O\_GPR\_C\_FPR\_C\_FPR}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_GPR\_C\_FPR\_C\_FPR@{O\_GPR\_C\_FPR\_C\_FPR}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a4acbd7a3820c4fe37725ec992ebe084a}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a4acbd7a3820c4fe37725ec992ebe084a}} 
+O\+\_\+\+GPR\+\_\+\+C\+\_\+\+FPR\+\_\+\+C\+\_\+\+FPR&Opcode general-\/register , floating-\/point-\/register , floating-\/point-\/register. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_FPR\_C\_I\_LP\_GPR\_RP@{O\_FPR\_C\_I\_LP\_GPR\_RP}!instruction\_set@{instruction\_set}}\index{instruction\_set@{instruction\_set}!O\_FPR\_C\_I\_LP\_GPR\_RP@{O\_FPR\_C\_I\_LP\_GPR\_RP}}}\mbox{\Hypertarget{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a4b80d7d1223745bdf966288df20f1fa3}\label{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462a4b80d7d1223745bdf966288df20f1fa3}} 
+O\+\_\+\+FPR\+\_\+\+C\+\_\+\+I\+\_\+\+LP\+\_\+\+GPR\+\_\+\+RP&Opcode floating-\/point-\/register , immediate , lparen ( general-\/register ) rparen. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceinstruction__set_a605befee774c8275dccbdf096ac5b66f}\label{namespaceinstruction__set_a605befee774c8275dccbdf096ac5b66f}} 
+\index{instruction\_set@{instruction\_set}!getExpectedSyntaxes@{getExpectedSyntaxes}}
+\index{getExpectedSyntaxes@{getExpectedSyntaxes}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{getExpectedSyntaxes()}{getExpectedSyntaxes()}}
+{\footnotesize\ttfamily std\+::string instruction\+\_\+set\+::get\+Expected\+Syntaxes (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{opcode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a5303fb0dd8dd34c268231c47f85a02fc}\label{namespaceinstruction__set_a5303fb0dd8dd34c268231c47f85a02fc}} 
+\index{instruction\_set@{instruction\_set}!isDInstruction@{isDInstruction}}
+\index{isDInstruction@{isDInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isDInstruction()}{isDInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+DInstruction (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_aa2718ca4cc03370f5c3d248ed59028b6}\label{namespaceinstruction__set_aa2718ca4cc03370f5c3d248ed59028b6}} 
+\index{instruction\_set@{instruction\_set}!isFInstruction@{isFInstruction}}
+\index{isFInstruction@{isFInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isFInstruction()}{isFInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+FInstruction (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a3e26615428ea0891ded649073e440d88}\label{namespaceinstruction__set_a3e26615428ea0891ded649073e440d88}} 
+\index{instruction\_set@{instruction\_set}!isValidBaseExtensionInstruction@{isValidBaseExtensionInstruction}}
+\index{isValidBaseExtensionInstruction@{isValidBaseExtensionInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidBaseExtensionInstruction()}{isValidBaseExtensionInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+Base\+Extension\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a9f7fd6439b8f1fdf3fa6c4b846161a60}\label{namespaceinstruction__set_a9f7fd6439b8f1fdf3fa6c4b846161a60}} 
+\index{instruction\_set@{instruction\_set}!isValidBTypeInstruction@{isValidBTypeInstruction}}
+\index{isValidBTypeInstruction@{isValidBTypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidBTypeInstruction()}{isValidBTypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+BType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a200e08acd1cac12dc89b25fba97fa6ac}\label{namespaceinstruction__set_a200e08acd1cac12dc89b25fba97fa6ac}} 
+\index{instruction\_set@{instruction\_set}!isValidCSRInstruction@{isValidCSRInstruction}}
+\index{isValidCSRInstruction@{isValidCSRInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidCSRInstruction()}{isValidCSRInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+CSRInstruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_ac19e70a283ee2e1b15125faad66ba23e}\label{namespaceinstruction__set_ac19e70a283ee2e1b15125faad66ba23e}} 
+\index{instruction\_set@{instruction\_set}!isValidCSRITypeInstruction@{isValidCSRITypeInstruction}}
+\index{isValidCSRITypeInstruction@{isValidCSRITypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidCSRITypeInstruction()}{isValidCSRITypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+CSRIType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a390f2245d92958d7d6e67df52fdeab34}\label{namespaceinstruction__set_a390f2245d92958d7d6e67df52fdeab34}} 
+\index{instruction\_set@{instruction\_set}!isValidCSRRTypeInstruction@{isValidCSRRTypeInstruction}}
+\index{isValidCSRRTypeInstruction@{isValidCSRRTypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidCSRRTypeInstruction()}{isValidCSRRTypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+CSRRType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_afafd6b6e78053bc61fb215a4e3134ca3}\label{namespaceinstruction__set_afafd6b6e78053bc61fb215a4e3134ca3}} 
+\index{instruction\_set@{instruction\_set}!isValidFDITypeInstruction@{isValidFDITypeInstruction}}
+\index{isValidFDITypeInstruction@{isValidFDITypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidFDITypeInstruction()}{isValidFDITypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+FDIType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a41eeac0550849ef37fa33ff84cf76a2f}\label{namespaceinstruction__set_a41eeac0550849ef37fa33ff84cf76a2f}} 
+\index{instruction\_set@{instruction\_set}!isValidFDR1TypeInstruction@{isValidFDR1TypeInstruction}}
+\index{isValidFDR1TypeInstruction@{isValidFDR1TypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidFDR1TypeInstruction()}{isValidFDR1TypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+FDR1\+Type\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a708f1663efb124992763e7df4a28345e}\label{namespaceinstruction__set_a708f1663efb124992763e7df4a28345e}} 
+\index{instruction\_set@{instruction\_set}!isValidFDR2TypeInstruction@{isValidFDR2TypeInstruction}}
+\index{isValidFDR2TypeInstruction@{isValidFDR2TypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidFDR2TypeInstruction()}{isValidFDR2TypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+FDR2\+Type\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_ab0c4f49b586d5b40444c37be298aad10}\label{namespaceinstruction__set_ab0c4f49b586d5b40444c37be298aad10}} 
+\index{instruction\_set@{instruction\_set}!isValidFDR3TypeInstruction@{isValidFDR3TypeInstruction}}
+\index{isValidFDR3TypeInstruction@{isValidFDR3TypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidFDR3TypeInstruction()}{isValidFDR3TypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+FDR3\+Type\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a431026007ab52b5f443f62b0282a5632}\label{namespaceinstruction__set_a431026007ab52b5f443f62b0282a5632}} 
+\index{instruction\_set@{instruction\_set}!isValidFDR4TypeInstruction@{isValidFDR4TypeInstruction}}
+\index{isValidFDR4TypeInstruction@{isValidFDR4TypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidFDR4TypeInstruction()}{isValidFDR4TypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+FDR4\+Type\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a1dd7f86382bd6577c7b880367f5912fa}\label{namespaceinstruction__set_a1dd7f86382bd6577c7b880367f5912fa}} 
+\index{instruction\_set@{instruction\_set}!isValidFDRTypeInstruction@{isValidFDRTypeInstruction}}
+\index{isValidFDRTypeInstruction@{isValidFDRTypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidFDRTypeInstruction()}{isValidFDRTypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+FDRType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_aab688f810da37e8780510aab2f2232a0}\label{namespaceinstruction__set_aab688f810da37e8780510aab2f2232a0}} 
+\index{instruction\_set@{instruction\_set}!isValidFDSTypeInstruction@{isValidFDSTypeInstruction}}
+\index{isValidFDSTypeInstruction@{isValidFDSTypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidFDSTypeInstruction()}{isValidFDSTypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+FDSType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a2686c6cb47421100c0845826a00d6686}\label{namespaceinstruction__set_a2686c6cb47421100c0845826a00d6686}} 
+\index{instruction\_set@{instruction\_set}!isValidI1TypeInstruction@{isValidI1TypeInstruction}}
+\index{isValidI1TypeInstruction@{isValidI1TypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidI1TypeInstruction()}{isValidI1TypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+I1\+Type\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a1157d60c5ad00551432b62c74dce93ce}\label{namespaceinstruction__set_a1157d60c5ad00551432b62c74dce93ce}} 
+\index{instruction\_set@{instruction\_set}!isValidI2TypeInstruction@{isValidI2TypeInstruction}}
+\index{isValidI2TypeInstruction@{isValidI2TypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidI2TypeInstruction()}{isValidI2TypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+I2\+Type\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_ab009114befd859670c1b6a60a4d4a675}\label{namespaceinstruction__set_ab009114befd859670c1b6a60a4d4a675}} 
+\index{instruction\_set@{instruction\_set}!isValidI3TypeInstruction@{isValidI3TypeInstruction}}
+\index{isValidI3TypeInstruction@{isValidI3TypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidI3TypeInstruction()}{isValidI3TypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+I3\+Type\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a684c8ea1bb0cd5f2fcdb698286ce49bd}\label{namespaceinstruction__set_a684c8ea1bb0cd5f2fcdb698286ce49bd}} 
+\index{instruction\_set@{instruction\_set}!isValidInstruction@{isValidInstruction}}
+\index{isValidInstruction@{isValidInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidInstruction()}{isValidInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_ac10fca95259b7db81e9d64605dd6d7fd}\label{namespaceinstruction__set_ac10fca95259b7db81e9d64605dd6d7fd}} 
+\index{instruction\_set@{instruction\_set}!isValidITypeInstruction@{isValidITypeInstruction}}
+\index{isValidITypeInstruction@{isValidITypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidITypeInstruction()}{isValidITypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+IType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a40834369e5972193df7c74fa8d3cd7c4}\label{namespaceinstruction__set_a40834369e5972193df7c74fa8d3cd7c4}} 
+\index{instruction\_set@{instruction\_set}!isValidJTypeInstruction@{isValidJTypeInstruction}}
+\index{isValidJTypeInstruction@{isValidJTypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidJTypeInstruction()}{isValidJTypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+JType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_adf2c87a1fa7b27e0012e3eaf1f575538}\label{namespaceinstruction__set_adf2c87a1fa7b27e0012e3eaf1f575538}} 
+\index{instruction\_set@{instruction\_set}!isValidPseudoInstruction@{isValidPseudoInstruction}}
+\index{isValidPseudoInstruction@{isValidPseudoInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidPseudoInstruction()}{isValidPseudoInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+Pseudo\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a2dbf58ce982702b5ebd65bedbad55f1a}\label{namespaceinstruction__set_a2dbf58ce982702b5ebd65bedbad55f1a}} 
+\index{instruction\_set@{instruction\_set}!isValidRTypeInstruction@{isValidRTypeInstruction}}
+\index{isValidRTypeInstruction@{isValidRTypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidRTypeInstruction()}{isValidRTypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+RType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a402f2c32c5f3981e732c5a7bada97398}\label{namespaceinstruction__set_a402f2c32c5f3981e732c5a7bada97398}} 
+\index{instruction\_set@{instruction\_set}!isValidSTypeInstruction@{isValidSTypeInstruction}}
+\index{isValidSTypeInstruction@{isValidSTypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidSTypeInstruction()}{isValidSTypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+SType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinstruction__set_a72120155b1b49e86de5a21a140757e0c}\label{namespaceinstruction__set_a72120155b1b49e86de5a21a140757e0c}} 
+\index{instruction\_set@{instruction\_set}!isValidUTypeInstruction@{isValidUTypeInstruction}}
+\index{isValidUTypeInstruction@{isValidUTypeInstruction}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{isValidUTypeInstruction()}{isValidUTypeInstruction()}}
+{\footnotesize\ttfamily bool instruction\+\_\+set\+::is\+Valid\+UType\+Instruction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceinstruction__set_a3e35acfc82b9e41676104e2747733de6}\label{namespaceinstruction__set_a3e35acfc82b9e41676104e2747733de6}} 
+\index{instruction\_set@{instruction\_set}!B\_type\_instruction\_encoding\_map@{B\_type\_instruction\_encoding\_map}}
+\index{B\_type\_instruction\_encoding\_map@{B\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{B\_type\_instruction\_encoding\_map}{B\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1BTypeInstructionEncoding}{BType\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+B\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}beq"{}}, \{0b1100011, 0b000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}bne"{}}, \{0b1100011, 0b001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}blt"{}}, \{0b1100011, 0b100\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}bge"{}}, \{0b1100011, 0b101\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}bltu"{}}, \{0b1100011, 0b110\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}bgeu"{}}, \{0b1100011, 0b111\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a4073c9c96c0ad7b56852d98859e1baa3}\label{namespaceinstruction__set_a4073c9c96c0ad7b56852d98859e1baa3}} 
+\index{instruction\_set@{instruction\_set}!CSR\_I\_type\_instruction\_encoding\_map@{CSR\_I\_type\_instruction\_encoding\_map}}
+\index{CSR\_I\_type\_instruction\_encoding\_map@{CSR\_I\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{CSR\_I\_type\_instruction\_encoding\_map}{CSR\_I\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1CSR__ITypeInstructionEncoding}{CSR\+\_\+\+IType\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+CSR\+\_\+\+I\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}csrrwi"{}}, \{0b1110011, 0b101\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}csrrsi"{}}, \{0b1110011, 0b110\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}csrrci"{}}, \{0b1110011, 0b111\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_ae1beeefc4c920a816ef63d2cc2394b97}\label{namespaceinstruction__set_ae1beeefc4c920a816ef63d2cc2394b97}} 
+\index{instruction\_set@{instruction\_set}!CSR\_R\_type\_instruction\_encoding\_map@{CSR\_R\_type\_instruction\_encoding\_map}}
+\index{CSR\_R\_type\_instruction\_encoding\_map@{CSR\_R\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{CSR\_R\_type\_instruction\_encoding\_map}{CSR\_R\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1CSR__RTypeInstructionEncoding}{CSR\+\_\+\+RType\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+CSR\+\_\+\+R\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}csrrw"{}}, \{0b1110011, 0b001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}csrrs"{}}, \{0b1110011, 0b010\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}csrrc"{}}, \{0b1110011, 0b011\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_af5c5f93de8a03f2601cc9f734101d966}\label{namespaceinstruction__set_af5c5f93de8a03f2601cc9f734101d966}} 
+\index{instruction\_set@{instruction\_set}!F\_D\_I\_type\_instruction\_encoding\_map@{F\_D\_I\_type\_instruction\_encoding\_map}}
+\index{F\_D\_I\_type\_instruction\_encoding\_map@{F\_D\_I\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{F\_D\_I\_type\_instruction\_encoding\_map}{F\_D\_I\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDITypeInstructionEncoding}{FDIType\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+F\+\_\+\+D\+\_\+\+I\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}flw"{}}, \{0b0000111, 0b010\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fld"{}}, \{0b0000111, 0b011\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a4bc401050f099acc0422f451287d5da1}\label{namespaceinstruction__set_a4bc401050f099acc0422f451287d5da1}} 
+\index{instruction\_set@{instruction\_set}!F\_D\_R1\_type\_instruction\_encoding\_map@{F\_D\_R1\_type\_instruction\_encoding\_map}}
+\index{F\_D\_R1\_type\_instruction\_encoding\_map@{F\_D\_R1\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{F\_D\_R1\_type\_instruction\_encoding\_map}{F\_D\_R1\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDR1TypeInstructionEncoding}{FDR1\+Type\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+F\+\_\+\+D\+\_\+\+R1\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fadd.s"{}}, \{0b1010011, 0b0000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fsub.s"{}}, \{0b1010011, 0b0000100\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmul.s"{}}, \{0b1010011, 0b0001000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fdiv.s"{}}, \{0b1010011, 0b0001100\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fadd.d"{}}, \{0b1010011, 0b0000001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fsub.d"{}}, \{0b1010011, 0b0000101\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmul.d"{}}, \{0b1010011, 0b0001001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fdiv.d"{}}, \{0b1010011, 0b0001101\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a4ff8e79787a2060e8e8b53c20348cb66}\label{namespaceinstruction__set_a4ff8e79787a2060e8e8b53c20348cb66}} 
+\index{instruction\_set@{instruction\_set}!F\_D\_R2\_type\_instruction\_encoding\_map@{F\_D\_R2\_type\_instruction\_encoding\_map}}
+\index{F\_D\_R2\_type\_instruction\_encoding\_map@{F\_D\_R2\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{F\_D\_R2\_type\_instruction\_encoding\_map}{F\_D\_R2\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDR2TypeInstructionEncoding}{FDR2\+Type\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+F\+\_\+\+D\+\_\+\+R2\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+\mbox{\Hypertarget{namespaceinstruction__set_add9dd2648cc982b1271c28b41c99e18b}\label{namespaceinstruction__set_add9dd2648cc982b1271c28b41c99e18b}} 
+\index{instruction\_set@{instruction\_set}!F\_D\_R3\_type\_instruction\_encoding\_map@{F\_D\_R3\_type\_instruction\_encoding\_map}}
+\index{F\_D\_R3\_type\_instruction\_encoding\_map@{F\_D\_R3\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{F\_D\_R3\_type\_instruction\_encoding\_map}{F\_D\_R3\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDR3TypeInstructionEncoding}{FDR3\+Type\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+F\+\_\+\+D\+\_\+\+R3\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmv.w.x"{}}, \{0b1010011, 0b000, 0b00000, 0b1111000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmv.x.w"{}}, \{0b1010011, 0b000, 0b00000, 0b1110000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fclass.s"{}}, \{0b1010011, 0b001, 0b00000, 0b1110000\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmv.d.x"{}}, \{0b1010011, 0b000, 0b00000, 0b1111001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmv.x.d"{}}, \{0b1010011, 0b000, 0b00000, 0b1110001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fclass.d"{}}, \{0b1010011, 0b001, 0b00000, 0b1110001\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a430c1ddcd83a4d8f4f2d6686e4be53d5}\label{namespaceinstruction__set_a430c1ddcd83a4d8f4f2d6686e4be53d5}} 
+\index{instruction\_set@{instruction\_set}!F\_D\_R4\_type\_instruction\_encoding\_map@{F\_D\_R4\_type\_instruction\_encoding\_map}}
+\index{F\_D\_R4\_type\_instruction\_encoding\_map@{F\_D\_R4\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{F\_D\_R4\_type\_instruction\_encoding\_map}{F\_D\_R4\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDR4TypeInstructionEncoding}{FDR4\+Type\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+F\+\_\+\+D\+\_\+\+R4\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmadd.s"{}}, \{0b1000011, 0b00\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmsub.s"{}}, \{0b1000111, 0b00\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fnmsub.s"{}}, \{0b1001011, 0b00\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fnmadd.s"{}}, \{0b1001111, 0b00\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmadd.d"{}}, \{0b1000011, 0b01\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmsub.d"{}}, \{0b1000111, 0b01\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fnmsub.d"{}}, \{0b1001011, 0b01\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fnmadd.d"{}}, \{0b1001111, 0b01\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a5cf78416d8c2c005a6fd3c9caead1ff2}\label{namespaceinstruction__set_a5cf78416d8c2c005a6fd3c9caead1ff2}} 
+\index{instruction\_set@{instruction\_set}!F\_D\_R\_type\_instruction\_encoding\_map@{F\_D\_R\_type\_instruction\_encoding\_map}}
+\index{F\_D\_R\_type\_instruction\_encoding\_map@{F\_D\_R\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{F\_D\_R\_type\_instruction\_encoding\_map}{F\_D\_R\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDRTypeInstructionEncoding}{FDRType\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+F\+\_\+\+D\+\_\+\+R\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fsgnj.s"{}}, \{0b1010011, 0b000, 0b0010000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fsgnjn.s"{}}, \{0b1010011, 0b001, 0b0010000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fsgnjx.s"{}}, \{0b1010011, 0b010, 0b0010000\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmin.s"{}}, \{0b1010011, 0b000, 0b0010100\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmax.s"{}}, \{0b1010011, 0b001, 0b0010100\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}feq.s"{}}, \{0b1010011, 0b010, 0b1010000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}flt.s"{}}, \{0b1010011, 0b001, 0b1010000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fle.s"{}}, \{0b1010011, 0b000, 0b1010000\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}feq.d"{}}, \{0b1010011, 0b010, 0b1010001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}flt.d"{}}, \{0b1010011, 0b001, 0b1010001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fle.d"{}}, \{0b1010011, 0b000, 0b1010001\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fsgnj.d"{}}, \{0b1010011, 0b000, 0b0010001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fsgnjn.d"{}}, \{0b1010011, 0b001, 0b0010001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fsgnjx.d"{}}, \{0b1010011, 0b010, 0b0010001\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmin.d"{}}, \{0b1010011, 0b000, 0b0010101\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fmax.d"{}}, \{0b1010011, 0b001, 0b0010101\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a5d37d30556dd68b58a56ac0e134aa17c}\label{namespaceinstruction__set_a5d37d30556dd68b58a56ac0e134aa17c}} 
+\index{instruction\_set@{instruction\_set}!F\_D\_S\_type\_instruction\_encoding\_map@{F\_D\_S\_type\_instruction\_encoding\_map}}
+\index{F\_D\_S\_type\_instruction\_encoding\_map@{F\_D\_S\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{F\_D\_S\_type\_instruction\_encoding\_map}{F\_D\_S\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1FDSTypeInstructionEncoding}{FDSType\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+F\+\_\+\+D\+\_\+\+S\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fsw"{}}, \{0b0100111, 0b010\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}fsd"{}}, \{0b0100111, 0b011\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_ad362b1b3167d50a18c67c280b54012b3}\label{namespaceinstruction__set_ad362b1b3167d50a18c67c280b54012b3}} 
+\index{instruction\_set@{instruction\_set}!I1\_type\_instruction\_encoding\_map@{I1\_type\_instruction\_encoding\_map}}
+\index{I1\_type\_instruction\_encoding\_map@{I1\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{I1\_type\_instruction\_encoding\_map}{I1\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1I1TypeInstructionEncoding}{I1\+Type\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+I1\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}addi"{}}, \{0b0010011, 0b000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}xori"{}}, \{0b0010011, 0b100\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}ori"{}}, \{0b0010011, 0b110\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}andi"{}}, \{0b0010011, 0b111\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sltiu"{}}, \{0b0010011, 0b011\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}slti"{}}, \{0b0010011, 0b010\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}addiw"{}}, \{0b0011011, 0b000\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lh"{}}, \{0b0000011, 0b001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lw"{}}, \{0b0000011, 0b010\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lb"{}}, \{0b0000011, 0b000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}ld"{}}, \{0b0000011, 0b011\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lbu"{}}, \{0b0000011, 0b100\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lhu"{}}, \{0b0000011, 0b101\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lwu"{}}, \{0b0000011, 0b110\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}jalr"{}}, \{0b1100111, 0b000\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a51290da536b0f0b8fad0e76c5d63300c}\label{namespaceinstruction__set_a51290da536b0f0b8fad0e76c5d63300c}} 
+\index{instruction\_set@{instruction\_set}!I2\_type\_instruction\_encoding\_map@{I2\_type\_instruction\_encoding\_map}}
+\index{I2\_type\_instruction\_encoding\_map@{I2\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{I2\_type\_instruction\_encoding\_map}{I2\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1I2TypeInstructionEncoding}{I2\+Type\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+I2\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}slli"{}}, \{0b0010011, 0b001, 0b000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}srli"{}}, \{0b0010011, 0b101, 0b000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}srai"{}}, \{0b0010011, 0b101, 0b010000\}\}, }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}slliw"{}}, \{0b0011011, 0b001, 0b000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}srliw"{}}, \{0b0011011, 0b101, 0b000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sraiw"{}}, \{0b0011011, 0b101, 0b010000\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a1e1482a4d9c3475f9750286a89db56ac}\label{namespaceinstruction__set_a1e1482a4d9c3475f9750286a89db56ac}} 
+\index{instruction\_set@{instruction\_set}!I3\_type\_instruction\_encoding\_map@{I3\_type\_instruction\_encoding\_map}}
+\index{I3\_type\_instruction\_encoding\_map@{I3\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{I3\_type\_instruction\_encoding\_map}{I3\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1I3TypeInstructionEncoding}{I3\+Type\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+I3\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}ecall"{}}, \{0b1110011, 0b000, 0b0000000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}ebreak"{}}, \{0b1110011, 0b001, 0b0000000\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a5e20a1ab57999f19806854d6ccceeedb}\label{namespaceinstruction__set_a5e20a1ab57999f19806854d6ccceeedb}} 
+\index{instruction\_set@{instruction\_set}!instruction\_syntax\_map@{instruction\_syntax\_map}}
+\index{instruction\_syntax\_map@{instruction\_syntax\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{instruction\_syntax\_map}{instruction\_syntax\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{namespaceinstruction__set_a7c366784cebccd7fbfda77874d229462}{Syntax\+Type}} $>$ $>$ instruction\+\_\+set\+::instruction\+\_\+syntax\+\_\+map}
+
+
+
+A map that associates instruction names with their expected syntax. 
+
+This map stores the expected syntax for various instructions, indexed by their names. \mbox{\Hypertarget{namespaceinstruction__set_a374dcbb396c16fc22f77466bff4f7861}\label{namespaceinstruction__set_a374dcbb396c16fc22f77466bff4f7861}} 
+\index{instruction\_set@{instruction\_set}!J\_type\_instruction\_encoding\_map@{J\_type\_instruction\_encoding\_map}}
+\index{J\_type\_instruction\_encoding\_map@{J\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{J\_type\_instruction\_encoding\_map}{J\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1JTypeInstructionEncoding}{JType\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+J\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}jal"{}}, \{0b1101111\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a859191af4ff841c4c7486a6a19c7fa7a}\label{namespaceinstruction__set_a859191af4ff841c4c7486a6a19c7fa7a}} 
+\index{instruction\_set@{instruction\_set}!R\_type\_instruction\_encoding\_map@{R\_type\_instruction\_encoding\_map}}
+\index{R\_type\_instruction\_encoding\_map@{R\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{R\_type\_instruction\_encoding\_map}{R\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1RTypeInstructionEncoding}{RType\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+R\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+\mbox{\Hypertarget{namespaceinstruction__set_ab50cca829f0e03ebbe8b71abc0145f8c}\label{namespaceinstruction__set_ab50cca829f0e03ebbe8b71abc0145f8c}} 
+\index{instruction\_set@{instruction\_set}!S\_type\_instruction\_encoding\_map@{S\_type\_instruction\_encoding\_map}}
+\index{S\_type\_instruction\_encoding\_map@{S\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{S\_type\_instruction\_encoding\_map}{S\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1STypeInstructionEncoding}{SType\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+S\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sb"{}}, \{0b0100011, 0b000\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sh"{}}, \{0b0100011, 0b001\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sw"{}}, \{0b0100011, 0b010\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}sd"{}}, \{0b0100011, 0b011\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceinstruction__set_a8dc1d0372413156d015ff8f7e85a4efe}\label{namespaceinstruction__set_a8dc1d0372413156d015ff8f7e85a4efe}} 
+\index{instruction\_set@{instruction\_set}!U\_type\_instruction\_encoding\_map@{U\_type\_instruction\_encoding\_map}}
+\index{U\_type\_instruction\_encoding\_map@{U\_type\_instruction\_encoding\_map}!instruction\_set@{instruction\_set}}
+\doxysubsubsection{\texorpdfstring{U\_type\_instruction\_encoding\_map}{U\_type\_instruction\_encoding\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structinstruction__set_1_1UTypeInstructionEncoding}{UType\+Instruction\+Encoding}} $>$ instruction\+\_\+set\+::\+U\+\_\+type\+\_\+instruction\+\_\+encoding\+\_\+map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}lui"{}}, \{0b0110111\}\}, }
+\DoxyCodeLine{    \{\textcolor{stringliteral}{"{}auipc"{}}, \{0b0010111\}\}, }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

@@ -1,0 +1,125 @@
+\hypertarget{structImmediateOutOfRangeError}{}\doxysection{Immediate\+Out\+Of\+Range\+Error Struct Reference}
+\label{structImmediateOutOfRangeError}\index{ImmediateOutOfRangeError@{ImmediateOutOfRangeError}}
+
+
+Represents an error caused by an immediate value being outside the valid range.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structImmediateOutOfRangeError_a7ab1ef764c6fdd07d821ec98685ea784}{Immediate\+Out\+Of\+Range\+Error}} (std\+::string \mbox{\hyperlink{structImmediateOutOfRangeError_af9a509f8ea365ff85d9cb5e5430daed8}{main\+\_\+message}}, std\+::string \mbox{\hyperlink{structImmediateOutOfRangeError_a9d135ac2d92ae582adfae198c9669278}{sub\+\_\+message}}, std\+::string \mbox{\hyperlink{structImmediateOutOfRangeError_a8bc99836db885e8fccb2ce0444345f17}{filename}}, unsigned int \mbox{\hyperlink{structImmediateOutOfRangeError_a03b5a704355547727e9030952692dc5c}{line\+\_\+number}}, unsigned int \mbox{\hyperlink{structImmediateOutOfRangeError_adf62fa58c21b078ea3c2b9496539b3ce}{column\+\_\+number}}, std\+::string \mbox{\hyperlink{structImmediateOutOfRangeError_abddd8aab445aa8c0ad65bb709c047f00}{line\+\_\+text}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structImmediateOutOfRangeError_af9a509f8ea365ff85d9cb5e5430daed8}{main\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Main error message. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structImmediateOutOfRangeError_a9d135ac2d92ae582adfae198c9669278}{sub\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Sub error message with additional details. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structImmediateOutOfRangeError_a8bc99836db885e8fccb2ce0444345f17}{filename}}
+\begin{DoxyCompactList}\small\item\em Filename where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structImmediateOutOfRangeError_a03b5a704355547727e9030952692dc5c}{line\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Line number where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structImmediateOutOfRangeError_adf62fa58c21b078ea3c2b9496539b3ce}{column\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em Column number where the error occurred. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structImmediateOutOfRangeError_abddd8aab445aa8c0ad65bb709c047f00}{line\+\_\+text}}
+\begin{DoxyCompactList}\small\item\em Text of the line where the error occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{structImmediateOutOfRangeError_a64fad90e784a790f54e9950e9dde4088}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structImmediateOutOfRangeError}{Immediate\+Out\+Of\+Range\+Error}} \&error)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an error caused by an immediate value being outside the valid range. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structImmediateOutOfRangeError_a7ab1ef764c6fdd07d821ec98685ea784}\label{structImmediateOutOfRangeError_a7ab1ef764c6fdd07d821ec98685ea784}} 
+\index{ImmediateOutOfRangeError@{ImmediateOutOfRangeError}!ImmediateOutOfRangeError@{ImmediateOutOfRangeError}}
+\index{ImmediateOutOfRangeError@{ImmediateOutOfRangeError}!ImmediateOutOfRangeError@{ImmediateOutOfRangeError}}
+\doxysubsubsection{\texorpdfstring{ImmediateOutOfRangeError()}{ImmediateOutOfRangeError()}}
+{\footnotesize\ttfamily Immediate\+Out\+Of\+Range\+Error\+::\+Immediate\+Out\+Of\+Range\+Error (\begin{DoxyParamCaption}\item[{std\+::string}]{main\+\_\+message,  }\item[{std\+::string}]{sub\+\_\+message,  }\item[{std\+::string}]{filename,  }\item[{unsigned int}]{line\+\_\+number,  }\item[{unsigned int}]{column\+\_\+number,  }\item[{std\+::string}]{line\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structImmediateOutOfRangeError_a64fad90e784a790f54e9950e9dde4088}\label{structImmediateOutOfRangeError_a64fad90e784a790f54e9950e9dde4088}} 
+\index{ImmediateOutOfRangeError@{ImmediateOutOfRangeError}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ImmediateOutOfRangeError@{ImmediateOutOfRangeError}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{structImmediateOutOfRangeError}{Immediate\+Out\+Of\+Range\+Error}} \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structImmediateOutOfRangeError_adf62fa58c21b078ea3c2b9496539b3ce}\label{structImmediateOutOfRangeError_adf62fa58c21b078ea3c2b9496539b3ce}} 
+\index{ImmediateOutOfRangeError@{ImmediateOutOfRangeError}!column\_number@{column\_number}}
+\index{column\_number@{column\_number}!ImmediateOutOfRangeError@{ImmediateOutOfRangeError}}
+\doxysubsubsection{\texorpdfstring{column\_number}{column\_number}}
+{\footnotesize\ttfamily unsigned int Immediate\+Out\+Of\+Range\+Error\+::column\+\_\+number}
+
+
+
+Column number where the error occurred. 
+
+\mbox{\Hypertarget{structImmediateOutOfRangeError_a8bc99836db885e8fccb2ce0444345f17}\label{structImmediateOutOfRangeError_a8bc99836db885e8fccb2ce0444345f17}} 
+\index{ImmediateOutOfRangeError@{ImmediateOutOfRangeError}!filename@{filename}}
+\index{filename@{filename}!ImmediateOutOfRangeError@{ImmediateOutOfRangeError}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily std\+::string Immediate\+Out\+Of\+Range\+Error\+::filename}
+
+
+
+Filename where the error occurred. 
+
+\mbox{\Hypertarget{structImmediateOutOfRangeError_a03b5a704355547727e9030952692dc5c}\label{structImmediateOutOfRangeError_a03b5a704355547727e9030952692dc5c}} 
+\index{ImmediateOutOfRangeError@{ImmediateOutOfRangeError}!line\_number@{line\_number}}
+\index{line\_number@{line\_number}!ImmediateOutOfRangeError@{ImmediateOutOfRangeError}}
+\doxysubsubsection{\texorpdfstring{line\_number}{line\_number}}
+{\footnotesize\ttfamily unsigned int Immediate\+Out\+Of\+Range\+Error\+::line\+\_\+number}
+
+
+
+Line number where the error occurred. 
+
+\mbox{\Hypertarget{structImmediateOutOfRangeError_abddd8aab445aa8c0ad65bb709c047f00}\label{structImmediateOutOfRangeError_abddd8aab445aa8c0ad65bb709c047f00}} 
+\index{ImmediateOutOfRangeError@{ImmediateOutOfRangeError}!line\_text@{line\_text}}
+\index{line\_text@{line\_text}!ImmediateOutOfRangeError@{ImmediateOutOfRangeError}}
+\doxysubsubsection{\texorpdfstring{line\_text}{line\_text}}
+{\footnotesize\ttfamily std\+::string Immediate\+Out\+Of\+Range\+Error\+::line\+\_\+text}
+
+
+
+Text of the line where the error occurred. 
+
+\mbox{\Hypertarget{structImmediateOutOfRangeError_af9a509f8ea365ff85d9cb5e5430daed8}\label{structImmediateOutOfRangeError_af9a509f8ea365ff85d9cb5e5430daed8}} 
+\index{ImmediateOutOfRangeError@{ImmediateOutOfRangeError}!main\_message@{main\_message}}
+\index{main\_message@{main\_message}!ImmediateOutOfRangeError@{ImmediateOutOfRangeError}}
+\doxysubsubsection{\texorpdfstring{main\_message}{main\_message}}
+{\footnotesize\ttfamily std\+::string Immediate\+Out\+Of\+Range\+Error\+::main\+\_\+message}
+
+
+
+Main error message. 
+
+\mbox{\Hypertarget{structImmediateOutOfRangeError_a9d135ac2d92ae582adfae198c9669278}\label{structImmediateOutOfRangeError_a9d135ac2d92ae582adfae198c9669278}} 
+\index{ImmediateOutOfRangeError@{ImmediateOutOfRangeError}!sub\_message@{sub\_message}}
+\index{sub\_message@{sub\_message}!ImmediateOutOfRangeError@{ImmediateOutOfRangeError}}
+\doxysubsubsection{\texorpdfstring{sub\_message}{sub\_message}}
+{\footnotesize\ttfamily std\+::string Immediate\+Out\+Of\+Range\+Error\+::sub\+\_\+message}
+
+
+
+Sub error message with additional details. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/assembler/\mbox{\hyperlink{errors_8h}{errors.\+h}}\end{DoxyCompactItemize}

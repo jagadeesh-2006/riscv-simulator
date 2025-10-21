@@ -1,0 +1,67 @@
+name: Build and Release VM
+
+on:
+  push:
+    tags:
+      - 'v*' 
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, windows-latest, macos-latest]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Extract version
+        id: version
+        run: echo "VERSION=${GITHUB_REF_NAME}" >> $GITHUB_ENV
+
+      - name: Set up CMake
+        uses: lukka/get-cmake@latest
+
+      - name: Install MinGW (Windows only)
+        if: matrix.os == 'windows-latest'
+        run: |
+          choco install mingw -y
+          echo "C:\ProgramData\chocolatey\bin" >> $GITHUB_PATH
+          echo "C:\Program Files\mingw-w64\bin" >> $GITHUB_PATH
+
+      - name: Configure CMake
+        run: |
+          if [[ "${{ matrix.os }}" == "windows-latest" ]]; then
+            cmake -S . -B build -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF
+          else
+            cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF
+          fi
+        shell: bash
+
+      - name: Build
+        run: cmake --build build --config Release
+
+      - name: Rename Binary
+        shell: bash
+        run: |
+          mkdir output
+          if [[ "${{ matrix.os }}" == "windows-latest" ]]; then
+            cp build/vm.exe output/vm-${{ env.VERSION }}-${{ matrix.os }}.exe
+          else
+            cp build/vm output/vm-${{ env.VERSION }}-${{ matrix.os }}
+          fi
+
+      - name: Upload Release Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          files: |
+            output/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

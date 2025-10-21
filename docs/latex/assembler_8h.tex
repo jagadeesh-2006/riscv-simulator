@@ -1,0 +1,50 @@
+\hypertarget{assembler_8h}{}\doxysection{include/assembler/assembler.h File Reference}
+\label{assembler_8h}\index{include/assembler/assembler.h@{include/assembler/assembler.h}}
+{\ttfamily \#include \char`\"{}assembler/lexer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}assembler/parser.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}code\+\_\+generator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vm\+\_\+asm\+\_\+mw.\+h\char`\"{}}\newline
+Include dependency graph for assembler.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assembler_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{assembler_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAssembledProgram}{Assembled\+Program}} \mbox{\hyperlink{assembler_8h_a8e37bfd2b778ed2eb6c17c251aac6120}{assemble}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Assembles the intermediate code into machine code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{assembler_8h_a8e37bfd2b778ed2eb6c17c251aac6120}\label{assembler_8h_a8e37bfd2b778ed2eb6c17c251aac6120}} 
+\index{assembler.h@{assembler.h}!assemble@{assemble}}
+\index{assemble@{assemble}!assembler.h@{assembler.h}}
+\doxysubsubsection{\texorpdfstring{assemble()}{assemble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAssembledProgram}{Assembled\+Program}} assemble (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Assembles the intermediate code into machine code. 
+
+This function takes a vector of intermediate code blocks and assembles them into machine code. It uses the functions generate\+RType\+Machine\+Code, generate\+IType\+Machine\+Code, generate\+SType\+Machine\+Code, generate\+BType\+Machine\+Code, generate\+UType\+Machine\+Code, and generate\+JType\+Machine\+Code to generate the machine code for each block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Intermediate\+Code} & A vector of pairs containing \mbox{\hyperlink{structICUnit}{ICUnit}} and a boolean flag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of strings representing the machine code. 
+\end{DoxyReturn}

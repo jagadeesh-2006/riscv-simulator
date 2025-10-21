@@ -1,0 +1,68 @@
+\hypertarget{namespacevmConfig_1_1INI}{}\doxysection{vm\+Config\+::ini Namespace Reference}
+\label{namespacevmConfig_1_1INI}\index{vm_config::ini@{vm_config::ini}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacevmConfig_1_1INI_a44ae63dad24de0d3ac97155a500cbbca}{trim}} (std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Trims leading and trailing whitespace from a string. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacevmConfig_1_1INI_a0982b63f0594859dad4548b671faaef2}{get}} (const std\+::string \&section, const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Retrieves the value associated with a given section and key. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacevmConfig_1_1INI_ab868ddda95afb895200d320e60eac536}{set}} (const std\+::string \&section, const std\+::string \&key, const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value for a given section and key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacevmConfig_1_1INI_a0982b63f0594859dad4548b671faaef2}\label{namespacevmConfig_1_1INI_a0982b63f0594859dad4548b671faaef2}} 
+\index{vm_config::ini@{vm_config::ini}!get@{get}}
+\index{get@{get}!vm_config::ini@{vm_config::ini}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily std\+::string vm\+Config\+::\+ini\+::get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{section,  }\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Retrieves the value associated with a given section and key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section containing the key. \\
+\hline
+{\em key} & The key whose value needs to be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value associated with the key as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacevmConfig_1_1INI_ab868ddda95afb895200d320e60eac536}\label{namespacevmConfig_1_1INI_ab868ddda95afb895200d320e60eac536}} 
+\index{vm_config::ini@{vm_config::ini}!set@{set}}
+\index{set@{set}!vm_config::ini@{vm_config::ini}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void vm\+Config\+::\+ini\+::set (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{section,  }\item[{const std\+::string \&}]{key,  }\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets the value for a given section and key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & The section containing the key. \\
+\hline
+{\em key} & The key to be modified. \\
+\hline
+{\em value} & The value to be set for the key. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacevmConfig_1_1INI_a44ae63dad24de0d3ac97155a500cbbca}\label{namespacevmConfig_1_1INI_a44ae63dad24de0d3ac97155a500cbbca}} 
+\index{vm_config::ini@{vm_config::ini}!trim@{trim}}
+\index{trim@{trim}!vm_config::ini@{vm_config::ini}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily void vm\+Config\+::\+ini\+::Trim (\begin{DoxyParamCaption}\item[{std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Trims leading and trailing whitespace from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to be trimmed. \\
+\hline
+\end{DoxyParams}

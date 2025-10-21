@@ -1,0 +1,14 @@
+<map id="include/vm/main_memory.h" name="include/vm/main_memory.h">
+<area shape="rect" id="node1" title="Contains the definition of the MemoryBlock and Memory classes." alt="" coords="428,5,631,32"/>
+<area shape="rect" id="node2" href="$config_8h.html" title="Contains configuration options for the assembler." alt="" coords="325,80,398,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,155,64,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="495,155,582,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="607,155,673,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="593,80,655,107"/>
+<area shape="rect" id="node12" title=" " alt="" coords="679,80,803,107"/>
+<area shape="rect" id="node3" href="$globals_8h.html" title="Contains global definitions and includes for the assembler." alt="" coords="390,155,471,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="88,155,168,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="193,155,266,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="291,155,365,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="385,229,476,256"/>
+</map>

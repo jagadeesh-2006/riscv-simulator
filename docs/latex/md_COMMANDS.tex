@@ -1,0 +1,65 @@
+
+\begin{DoxyItemize}
+\item {\ttfamily load} or {\ttfamily l}\+: {\ttfamily Absolute File\+Path} ~\newline
+
+\begin{DoxyItemize}
+\item Loads the specified file into the virtual machine.
+\item The file must be a valid riscv64 imfd file. If some error occurs, it is dumped in {\ttfamily vm\+\_\+state/errors\+\_\+dump.\+json}.
+\end{DoxyItemize}
+\item {\ttfamily run}
+\begin{DoxyItemize}
+\item Executes the loaded file, without considering breakpoints and no delay in steps.
+\end{DoxyItemize}
+\item {\ttfamily run\+\_\+debug} or {\ttfamily rd}
+\begin{DoxyItemize}
+\item Executes the loaded file, considering breakpoints and with a delay in steps (run\+\_\+step\+\_\+delay).
+\end{DoxyItemize}
+\item {\ttfamily step} or {\ttfamily s}
+\begin{DoxyItemize}
+\item Executes the next step in the loaded file.
+\end{DoxyItemize}
+\item {\ttfamily undo} or {\ttfamily u}
+\begin{DoxyItemize}
+\item Reverts the last executed step in the loaded file.
+\end{DoxyItemize}
+\item {\ttfamily add\+\_\+breakpoint}\+: {\ttfamily Line\+Number} (unsigned int)
+\begin{DoxyItemize}
+\item Adds a breakpoint at the specified line number in the loaded file.
+\end{DoxyItemize}
+\item {\ttfamily remove\+\_\+breakpoint}\+: {\ttfamily Line\+Number} (unsigned int)
+\begin{DoxyItemize}
+\item Removes the breakpoint at the specified line number in the loaded file.
+\end{DoxyItemize}
+\item {\ttfamily vm\+\_\+stdin} or {\ttfamily vmsin}\+: {\ttfamily Input} (string)
+\begin{DoxyItemize}
+\item Sends input to the virtual machine\textquotesingle{}s standard input.
+\item Note\+: use double quotes for strings with spaces.
+\end{DoxyItemize}
+\item {\ttfamily print\+\_\+mem} or {\ttfamily pm}\+: {\ttfamily Start\+Address1} (Hex) {\ttfamily Num\+Of\+Rows1} (unsigned int) \mbox{[}{\ttfamily Start\+Address2} {\ttfamily Num\+Of\+Rows2} ...\mbox{]}
+\begin{DoxyItemize}
+\item Prints the memory contents for each specified address and row count pair.
+\item You can provide multiple pairs of start addresses and number of rows to print multiple memory regions in one command.
+\end{DoxyItemize}
+\item {\ttfamily dump\+\_\+mem} or {\ttfamily dm}\+: {\ttfamily Start\+Address1} (Hex) {\ttfamily Num\+Of\+Rows1} (unsigned int) \mbox{[}{\ttfamily Start\+Address2} {\ttfamily Num\+Of\+Rows2} ...\mbox{]}
+\begin{DoxyItemize}
+\item Dumps the memory contents for each specified address and row count pair in the file {\ttfamily vm\+\_\+state/memory\+\_\+dump.\+json}.
+\item You can provide multiple pairs of start addresses and number of rows to dump multiple memory regions in one command.
+\end{DoxyItemize}
+\item {\ttfamily modify\+\_\+config} or {\ttfamily mconfig}\+: {\ttfamily Section}, {\ttfamily Key}, {\ttfamily Value}
+\begin{DoxyItemize}
+\item Modifies the internal configuration by setting the specified key in the given section to the provided value.
+\item {\ttfamily Execution}
+\begin{DoxyItemize}
+\item {\ttfamily processor\+\_\+type} (string) \+: {\ttfamily single\+\_\+stage} $\vert$ {\ttfamily multi\+\_\+stage} ~\newline
+
+\item {\ttfamily run\+\_\+step\+\_\+delay} (unsigned int) \+: milliseconds ~\newline
+
+\end{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classMemory}{Memory}}}
+\begin{DoxyItemize}
+\item {\ttfamily memory\+\_\+size} (unsigned int) \+: bytes
+\item {\ttfamily memory\+\_\+block\+\_\+size} (unsigned int) \+: bytes ~\newline
+ 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}

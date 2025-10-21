@@ -1,0 +1,2 @@
+lui x3, 0x100
+auipc x4, 0x100

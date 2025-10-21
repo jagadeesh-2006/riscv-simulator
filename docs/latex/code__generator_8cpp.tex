@@ -1,0 +1,306 @@
+\hypertarget{code__generator_8cpp}{}\doxysection{src/assembler/code\+\_\+generator.cpp File Reference}
+\label{code__generator_8cpp}\index{src/assembler/code\_generator.cpp@{src/assembler/code\_generator.cpp}}
+
+
+Contains the implementation of functions for generating machine code from intermediate code.  
+
+
+{\ttfamily \#include \char`\"{}assembler/code\+\_\+generator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}common/instructions.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+Include dependency graph for code\+\_\+generator.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{code__generator_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{code__generator_8cpp_add0059bcf4bc90896326c8d058d08237}{print\+Intermediate\+Code}} (const std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{structICUnit}{ICUnit}}, bool $>$$>$ \&Intermediate\+Code)
+\begin{DoxyCompactList}\small\item\em Prints the intermediate code to a vector of strings. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_ae2f66c19cde80bc9fc71361fe77b3f00}{generate\+RType\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\begin{DoxyCompactList}\small\item\em Generates machine code for an R-\/type instruction. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a33872fd00aeb2c4854301c2359183d41}{generate\+I1\+Type\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\begin{DoxyCompactList}\small\item\em Generates machine code for an I1-\/type instruction. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_af4bdbd7df647e1570161f55e57efb5f9}{generate\+I2\+Type\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\begin{DoxyCompactList}\small\item\em Generates machine code for an I2-\/type instruction. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_ac649c0340f846ca6b6397eccfa8e63d7}{generate\+I3\+Type\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\begin{DoxyCompactList}\small\item\em Generates machine code for an I3-\/type instruction. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a6e338288e3a9f58755f65ea74598fee1}{generate\+SType\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\begin{DoxyCompactList}\small\item\em Generates machine code for an S-\/type instruction. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a4d81b6f02d549e52c8d94d9ec42a6693}{generate\+BType\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\begin{DoxyCompactList}\small\item\em Generates machine code for a B-\/type instruction. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a35e8e9da9a7ad0efdd00d1dad39024aa}{generate\+UType\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\begin{DoxyCompactList}\small\item\em Generates machine code for a U-\/type instruction. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a088dd6d34e9ab61e47387668051ed29d}{generate\+JType\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\begin{DoxyCompactList}\small\item\em Generates machine code for a J-\/type instruction. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a0a624ae61d0c71c3223900cd9b6b22c0}{generate\+CSRRType\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a87c6114dd098c78db991c97a9a06d5bf}{generate\+CSRIType\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a868bed6e507a3a1255a3767b6cd33c88}{generate\+FDRType\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a8d546c09d03f4ce95067f74f563e8a8c}{generate\+FDR1\+Type\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a65f8a813d8a8fe2136f6756315e882bf}{generate\+FDR2\+Type\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_ab1e34732bad346700526196030dcd36c}{generate\+FDR3\+Type\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a3d9c2799a503820dc9d97ec036b53850}{generate\+FDR4\+Type\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a0d3eb18aa6888165eb840a1a79e29b8f}{generate\+FDIType\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{code__generator_8cpp_a5a3cbdf4cb88ec1982133d7de248e258}{generate\+FDSType\+Machine\+Code}} (const \mbox{\hyperlink{structICUnit}{ICUnit}} \&block)
+\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{code__generator_8cpp_aa739ed0fa6ab154bf045cc165592be2e}{generate\+Machine\+Code}} (const std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{structICUnit}{ICUnit}}, bool $>$$>$ \&Intermediate\+Code)
+\begin{DoxyCompactList}\small\item\em Generates machine code from a vector of intermediate code blocks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the implementation of functions for generating machine code from intermediate code. 
+
+\begin{DoxyAuthor}{Author}
+Vishank Singh, \href{https://github.com/VishankSingh}{\texttt{ https\+://github.\+com/\+Vishank\+Singh}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{code__generator_8cpp_a4d81b6f02d549e52c8d94d9ec42a6693}\label{code__generator_8cpp_a4d81b6f02d549e52c8d94d9ec42a6693}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateBTypeMachineCode@{generateBTypeMachineCode}}
+\index{generateBTypeMachineCode@{generateBTypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateBTypeMachineCode()}{generateBTypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+BType\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+
+
+Generates machine code for a B-\/type instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The \mbox{\hyperlink{structICUnit}{ICUnit}} representing the instruction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The machine code bitset$<$32$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code__generator_8cpp_a87c6114dd098c78db991c97a9a06d5bf}\label{code__generator_8cpp_a87c6114dd098c78db991c97a9a06d5bf}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateCSRITypeMachineCode@{generateCSRITypeMachineCode}}
+\index{generateCSRITypeMachineCode@{generateCSRITypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateCSRITypeMachineCode()}{generateCSRITypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+CSRIType\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code__generator_8cpp_a0a624ae61d0c71c3223900cd9b6b22c0}\label{code__generator_8cpp_a0a624ae61d0c71c3223900cd9b6b22c0}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateCSRRTypeMachineCode@{generateCSRRTypeMachineCode}}
+\index{generateCSRRTypeMachineCode@{generateCSRRTypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateCSRRTypeMachineCode()}{generateCSRRTypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+CSRRType\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code__generator_8cpp_a0d3eb18aa6888165eb840a1a79e29b8f}\label{code__generator_8cpp_a0d3eb18aa6888165eb840a1a79e29b8f}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateFDITypeMachineCode@{generateFDITypeMachineCode}}
+\index{generateFDITypeMachineCode@{generateFDITypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateFDITypeMachineCode()}{generateFDITypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+FDIType\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code__generator_8cpp_a8d546c09d03f4ce95067f74f563e8a8c}\label{code__generator_8cpp_a8d546c09d03f4ce95067f74f563e8a8c}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateFDR1TypeMachineCode@{generateFDR1TypeMachineCode}}
+\index{generateFDR1TypeMachineCode@{generateFDR1TypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateFDR1TypeMachineCode()}{generateFDR1TypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+FDR1\+Type\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code__generator_8cpp_a65f8a813d8a8fe2136f6756315e882bf}\label{code__generator_8cpp_a65f8a813d8a8fe2136f6756315e882bf}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateFDR2TypeMachineCode@{generateFDR2TypeMachineCode}}
+\index{generateFDR2TypeMachineCode@{generateFDR2TypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateFDR2TypeMachineCode()}{generateFDR2TypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+FDR2\+Type\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code__generator_8cpp_ab1e34732bad346700526196030dcd36c}\label{code__generator_8cpp_ab1e34732bad346700526196030dcd36c}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateFDR3TypeMachineCode@{generateFDR3TypeMachineCode}}
+\index{generateFDR3TypeMachineCode@{generateFDR3TypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateFDR3TypeMachineCode()}{generateFDR3TypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+FDR3\+Type\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code__generator_8cpp_a3d9c2799a503820dc9d97ec036b53850}\label{code__generator_8cpp_a3d9c2799a503820dc9d97ec036b53850}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateFDR4TypeMachineCode@{generateFDR4TypeMachineCode}}
+\index{generateFDR4TypeMachineCode@{generateFDR4TypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateFDR4TypeMachineCode()}{generateFDR4TypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+FDR4\+Type\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code__generator_8cpp_a868bed6e507a3a1255a3767b6cd33c88}\label{code__generator_8cpp_a868bed6e507a3a1255a3767b6cd33c88}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateFDRTypeMachineCode@{generateFDRTypeMachineCode}}
+\index{generateFDRTypeMachineCode@{generateFDRTypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateFDRTypeMachineCode()}{generateFDRTypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+FDRType\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code__generator_8cpp_a5a3cbdf4cb88ec1982133d7de248e258}\label{code__generator_8cpp_a5a3cbdf4cb88ec1982133d7de248e258}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateFDSTypeMachineCode@{generateFDSTypeMachineCode}}
+\index{generateFDSTypeMachineCode@{generateFDSTypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateFDSTypeMachineCode()}{generateFDSTypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+FDSType\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{code__generator_8cpp_a33872fd00aeb2c4854301c2359183d41}\label{code__generator_8cpp_a33872fd00aeb2c4854301c2359183d41}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateI1TypeMachineCode@{generateI1TypeMachineCode}}
+\index{generateI1TypeMachineCode@{generateI1TypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateI1TypeMachineCode()}{generateI1TypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+I1\+Type\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+
+
+Generates machine code for an I1-\/type instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The \mbox{\hyperlink{structICUnit}{ICUnit}} representing the instruction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The machine code bitset$<$32$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code__generator_8cpp_af4bdbd7df647e1570161f55e57efb5f9}\label{code__generator_8cpp_af4bdbd7df647e1570161f55e57efb5f9}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateI2TypeMachineCode@{generateI2TypeMachineCode}}
+\index{generateI2TypeMachineCode@{generateI2TypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateI2TypeMachineCode()}{generateI2TypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+I2\+Type\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+
+
+Generates machine code for an I2-\/type instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The \mbox{\hyperlink{structICUnit}{ICUnit}} representing the instruction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The machine code bitset$<$32$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code__generator_8cpp_ac649c0340f846ca6b6397eccfa8e63d7}\label{code__generator_8cpp_ac649c0340f846ca6b6397eccfa8e63d7}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateI3TypeMachineCode@{generateI3TypeMachineCode}}
+\index{generateI3TypeMachineCode@{generateI3TypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateI3TypeMachineCode()}{generateI3TypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+I3\+Type\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+
+
+Generates machine code for an I3-\/type instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The \mbox{\hyperlink{structICUnit}{ICUnit}} representing the instruction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The machine code bitset$<$32$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code__generator_8cpp_a088dd6d34e9ab61e47387668051ed29d}\label{code__generator_8cpp_a088dd6d34e9ab61e47387668051ed29d}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateJTypeMachineCode@{generateJTypeMachineCode}}
+\index{generateJTypeMachineCode@{generateJTypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateJTypeMachineCode()}{generateJTypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+JType\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+
+
+Generates machine code for a J-\/type instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The \mbox{\hyperlink{structICUnit}{ICUnit}} representing the instruction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The machine code bitset$<$32$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code__generator_8cpp_aa739ed0fa6ab154bf045cc165592be2e}\label{code__generator_8cpp_aa739ed0fa6ab154bf045cc165592be2e}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateMachineCode@{generateMachineCode}}
+\index{generateMachineCode@{generateMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateMachineCode()}{generateMachineCode()}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ generate\+Machine\+Code (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{structICUnit}{ICUnit}}, bool $>$$>$ \&}]{Intermediate\+Code }\end{DoxyParamCaption})}
+
+
+
+Generates machine code from a vector of intermediate code blocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Intermediate\+Code} & A vector of pairs containing \mbox{\hyperlink{structICUnit}{ICUnit}} and a boolean flag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of bitset$<$32$>$ representing the machine code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code__generator_8cpp_ae2f66c19cde80bc9fc71361fe77b3f00}\label{code__generator_8cpp_ae2f66c19cde80bc9fc71361fe77b3f00}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateRTypeMachineCode@{generateRTypeMachineCode}}
+\index{generateRTypeMachineCode@{generateRTypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateRTypeMachineCode()}{generateRTypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+RType\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+
+
+Generates machine code for an R-\/type instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The \mbox{\hyperlink{structICUnit}{ICUnit}} representing the instruction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The machine code bitset$<$32$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code__generator_8cpp_a6e338288e3a9f58755f65ea74598fee1}\label{code__generator_8cpp_a6e338288e3a9f58755f65ea74598fee1}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateSTypeMachineCode@{generateSTypeMachineCode}}
+\index{generateSTypeMachineCode@{generateSTypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateSTypeMachineCode()}{generateSTypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+SType\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+
+
+Generates machine code for an S-\/type instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The \mbox{\hyperlink{structICUnit}{ICUnit}} representing the instruction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The machine code bitset$<$32$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code__generator_8cpp_a35e8e9da9a7ad0efdd00d1dad39024aa}\label{code__generator_8cpp_a35e8e9da9a7ad0efdd00d1dad39024aa}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!generateUTypeMachineCode@{generateUTypeMachineCode}}
+\index{generateUTypeMachineCode@{generateUTypeMachineCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateUTypeMachineCode()}{generateUTypeMachineCode()}}
+{\footnotesize\ttfamily uint32\+\_\+t generate\+UType\+Machine\+Code (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structICUnit}{ICUnit}} \&}]{block }\end{DoxyParamCaption})}
+
+
+
+Generates machine code for a U-\/type instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The \mbox{\hyperlink{structICUnit}{ICUnit}} representing the instruction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The machine code bitset$<$32$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code__generator_8cpp_add0059bcf4bc90896326c8d058d08237}\label{code__generator_8cpp_add0059bcf4bc90896326c8d058d08237}} 
+\index{code\_generator.cpp@{code\_generator.cpp}!printIntermediateCode@{printIntermediateCode}}
+\index{printIntermediateCode@{printIntermediateCode}!code\_generator.cpp@{code\_generator.cpp}}
+\doxysubsubsection{\texorpdfstring{printIntermediateCode()}{printIntermediateCode()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ print\+Intermediate\+Code (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{structICUnit}{ICUnit}}, bool $>$$>$ \&}]{Intermediate\+Code }\end{DoxyParamCaption})}
+
+
+
+Prints the intermediate code to a vector of strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Intermediate\+Code} & A vector of pairs containing \mbox{\hyperlink{structICUnit}{ICUnit}} and a boolean flag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of strings representing the intermediate code. 
+\end{DoxyReturn}

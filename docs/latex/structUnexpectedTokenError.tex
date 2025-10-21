@@ -1,0 +1,113 @@
+\hypertarget{structUnexpectedTokenError}{}\doxysection{Unexpected\+Token\+Error Struct Reference}
+\label{structUnexpectedTokenError}\index{UnexpectedTokenError@{UnexpectedTokenError}}
+
+
+Represents an error caused by an unexpected token in the input.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structUnexpectedTokenError_a01981e62215aa1a3c8fe6af61eb23d22}{Unexpected\+Token\+Error}} (std\+::string \mbox{\hyperlink{structUnexpectedTokenError_a01937489ea3ae2398127c2113d9db822}{message}}, std\+::string \mbox{\hyperlink{structUnexpectedTokenError_a31e1616f0b2ffb3d63784a04e32065bc}{filename}}, unsigned int \mbox{\hyperlink{structUnexpectedTokenError_a00aceaeab70a9ab13981f26c74c01494}{line\+\_\+number}}, unsigned int \mbox{\hyperlink{structUnexpectedTokenError_a0be1bd8891b00cf2d4066430dbaa7ad8}{column\+\_\+number}}, std\+::string \mbox{\hyperlink{structUnexpectedTokenError_a03bdb3c2e3415ef5d6d2d37086feda93}{line\+\_\+text}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structUnexpectedTokenError_a01937489ea3ae2398127c2113d9db822}{message}}
+\begin{DoxyCompactList}\small\item\em The error message explaining the issue. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structUnexpectedTokenError_a31e1616f0b2ffb3d63784a04e32065bc}{filename}}
+\begin{DoxyCompactList}\small\item\em The name of the file where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structUnexpectedTokenError_a00aceaeab70a9ab13981f26c74c01494}{line\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em The line number where the error occurred. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{structUnexpectedTokenError_a0be1bd8891b00cf2d4066430dbaa7ad8}{column\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em The column number where the error occurred. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structUnexpectedTokenError_a03bdb3c2e3415ef5d6d2d37086feda93}{line\+\_\+text}}
+\begin{DoxyCompactList}\small\item\em The text of the line where the error occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{structUnexpectedTokenError_a0b4f5c56c4b3269ea4dc91d743c924ac}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structUnexpectedTokenError}{Unexpected\+Token\+Error}} \&error)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an error caused by an unexpected token in the input. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structUnexpectedTokenError_a01981e62215aa1a3c8fe6af61eb23d22}\label{structUnexpectedTokenError_a01981e62215aa1a3c8fe6af61eb23d22}} 
+\index{UnexpectedTokenError@{UnexpectedTokenError}!UnexpectedTokenError@{UnexpectedTokenError}}
+\index{UnexpectedTokenError@{UnexpectedTokenError}!UnexpectedTokenError@{UnexpectedTokenError}}
+\doxysubsubsection{\texorpdfstring{UnexpectedTokenError()}{UnexpectedTokenError()}}
+{\footnotesize\ttfamily Unexpected\+Token\+Error\+::\+Unexpected\+Token\+Error (\begin{DoxyParamCaption}\item[{std\+::string}]{message,  }\item[{std\+::string}]{filename,  }\item[{unsigned int}]{line\+\_\+number,  }\item[{unsigned int}]{column\+\_\+number,  }\item[{std\+::string}]{line\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structUnexpectedTokenError_a0b4f5c56c4b3269ea4dc91d743c924ac}\label{structUnexpectedTokenError_a0b4f5c56c4b3269ea4dc91d743c924ac}} 
+\index{UnexpectedTokenError@{UnexpectedTokenError}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!UnexpectedTokenError@{UnexpectedTokenError}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{structUnexpectedTokenError}{Unexpected\+Token\+Error}} \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structUnexpectedTokenError_a0be1bd8891b00cf2d4066430dbaa7ad8}\label{structUnexpectedTokenError_a0be1bd8891b00cf2d4066430dbaa7ad8}} 
+\index{UnexpectedTokenError@{UnexpectedTokenError}!column\_number@{column\_number}}
+\index{column\_number@{column\_number}!UnexpectedTokenError@{UnexpectedTokenError}}
+\doxysubsubsection{\texorpdfstring{column\_number}{column\_number}}
+{\footnotesize\ttfamily unsigned int Unexpected\+Token\+Error\+::column\+\_\+number}
+
+
+
+The column number where the error occurred. 
+
+\mbox{\Hypertarget{structUnexpectedTokenError_a31e1616f0b2ffb3d63784a04e32065bc}\label{structUnexpectedTokenError_a31e1616f0b2ffb3d63784a04e32065bc}} 
+\index{UnexpectedTokenError@{UnexpectedTokenError}!filename@{filename}}
+\index{filename@{filename}!UnexpectedTokenError@{UnexpectedTokenError}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily std\+::string Unexpected\+Token\+Error\+::filename}
+
+
+
+The name of the file where the error occurred. 
+
+\mbox{\Hypertarget{structUnexpectedTokenError_a00aceaeab70a9ab13981f26c74c01494}\label{structUnexpectedTokenError_a00aceaeab70a9ab13981f26c74c01494}} 
+\index{UnexpectedTokenError@{UnexpectedTokenError}!line\_number@{line\_number}}
+\index{line\_number@{line\_number}!UnexpectedTokenError@{UnexpectedTokenError}}
+\doxysubsubsection{\texorpdfstring{line\_number}{line\_number}}
+{\footnotesize\ttfamily unsigned int Unexpected\+Token\+Error\+::line\+\_\+number}
+
+
+
+The line number where the error occurred. 
+
+\mbox{\Hypertarget{structUnexpectedTokenError_a03bdb3c2e3415ef5d6d2d37086feda93}\label{structUnexpectedTokenError_a03bdb3c2e3415ef5d6d2d37086feda93}} 
+\index{UnexpectedTokenError@{UnexpectedTokenError}!line\_text@{line\_text}}
+\index{line\_text@{line\_text}!UnexpectedTokenError@{UnexpectedTokenError}}
+\doxysubsubsection{\texorpdfstring{line\_text}{line\_text}}
+{\footnotesize\ttfamily std\+::string Unexpected\+Token\+Error\+::line\+\_\+text}
+
+
+
+The text of the line where the error occurred. 
+
+\mbox{\Hypertarget{structUnexpectedTokenError_a01937489ea3ae2398127c2113d9db822}\label{structUnexpectedTokenError_a01937489ea3ae2398127c2113d9db822}} 
+\index{UnexpectedTokenError@{UnexpectedTokenError}!message@{message}}
+\index{message@{message}!UnexpectedTokenError@{UnexpectedTokenError}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily std\+::string Unexpected\+Token\+Error\+::message}
+
+
+
+The error message explaining the issue. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/assembler/\mbox{\hyperlink{errors_8h}{errors.\+h}}\end{DoxyCompactItemize}

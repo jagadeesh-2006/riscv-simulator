@@ -1,0 +1,59 @@
+\hypertarget{tokens_8cpp}{}\doxysection{src/assembler/tokens.cpp File Reference}
+\label{tokens_8cpp}\index{src/assembler/tokens.cpp@{src/assembler/tokens.cpp}}
+{\ttfamily \#include \char`\"{}assembler/tokens.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for tokens.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{tokens_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{tokens_8cpp_addb1b5065b5d708d8f7bbfc8cf36b575}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structToken}{Token}} \&token)
+\item 
+std\+::string \mbox{\hyperlink{tokens_8cpp_adcf4232d1b543f396684ab4b9d3d4bc5}{token\+Type\+To\+String}} (\mbox{\hyperlink{tokens_8h_aa520fbf142ba1e7e659590c07da31921}{Token\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Converts a Token\+Type to its string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tokens_8cpp_addb1b5065b5d708d8f7bbfc8cf36b575}\label{tokens_8cpp_addb1b5065b5d708d8f7bbfc8cf36b575}} 
+\index{tokens.cpp@{tokens.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!tokens.cpp@{tokens.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{structToken}{Token}} \&}]{token }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream to write to. \\
+\hline
+{\em token} & The token to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream with the token information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tokens_8cpp_adcf4232d1b543f396684ab4b9d3d4bc5}\label{tokens_8cpp_adcf4232d1b543f396684ab4b9d3d4bc5}} 
+\index{tokens.cpp@{tokens.cpp}!tokenTypeToString@{tokenTypeToString}}
+\index{tokenTypeToString@{tokenTypeToString}!tokens.cpp@{tokens.cpp}}
+\doxysubsubsection{\texorpdfstring{tokenTypeToString()}{tokenTypeToString()}}
+{\footnotesize\ttfamily std\+::string token\+Type\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tokens_8h_aa520fbf142ba1e7e659590c07da31921}{Token\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Converts a Token\+Type to its string representation. 
+
+This function is used to convert an enum value of Token\+Type to a human-\/readable string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The Token\+Type to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representing the Token\+Type. 
+\end{DoxyReturn}
