@@ -6,7 +6,7 @@
 #include "vm_runner.h"
 #include "command_handler.h"
 #include "config.h"
-
+#include "vm/rvss/rvss_vm_pipelined.h" 
 #include <iostream>
 #include <thread>
 #include <bitset>
