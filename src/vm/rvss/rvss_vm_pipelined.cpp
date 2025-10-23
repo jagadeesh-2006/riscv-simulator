@@ -29,10 +29,17 @@ void RVSSVMPipelined::Reset() {
   mem_wb_ = MEM_WB(); mem_wb_next_ = MEM_WB();
   pc_update_pending_ = false;
   pc_update_value_ = 0;
+  stall_ = false;
 }
 
 void RVSSVMPipelined::IF_stage() {
   // Fetch instruction at program_counter_
+  if (stall_) {
+    // When stalled, freeze IF/ID (no new fetch, PC does not advance)
+    if_id_next_ = if_id_;
+    return;
+  }
+
   if (!pc_update_pending_) {
     if_id_next_.pc = program_counter_;
     if_id_next_.instruction = memory_controller_.ReadWord(program_counter_);
@@ -59,6 +66,18 @@ void RVSSVMPipelined::ID_stage() {
   }
 
   uint32_t instr = if_id_.instruction;
+  // detect load-use hazard: check EX stage (id_ex_) against current ID-stage sources
+  uint8_t curr_rs1 = (instr >> 15) & 0b11111;
+  uint8_t curr_rs2 = (instr >> 20) & 0b11111;
+  if (hazard_unit_.DetectLoadUseHazard(id_ex_.rd, id_ex_.mem_read, curr_rs1, curr_rs2)) {
+    // Insert a stall: freeze IF/ID (handled in IF_stage) and insert bubble into ID/EX
+    stall_ = true;
+    // account for the stall
+    stall_cycles_++;
+    id_ex_next_ = ID_EX(); // bubble
+    return;
+  }
+
   id_ex_next_.valid = true;
   id_ex_next_.pc = if_id_.pc;
   id_ex_next_.instruction = instr;
@@ -209,10 +228,12 @@ void RVSSVMPipelined::advance_pipeline_registers() {
   ex_mem_next_ = EX_MEM();
   id_ex_next_ = ID_EX();
   if_id_next_ = IF_ID();
+  // clear stall after registers have advanced (one-cycle stall)
+  stall_ = false;
 }
 
 void RVSSVMPipelined::Run() {
-  ClearStop();
+  stop_requested_ = false;
   uint64_t instruction_executed = 0;
 
   // pipeline warmup: ensure registers are cleared

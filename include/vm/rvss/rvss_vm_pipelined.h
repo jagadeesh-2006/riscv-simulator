@@ -7,6 +7,7 @@
 
 #include "vm/vm_base.h"
 #include "vm/rvss/rvss_control_unit.h"
+#include "vm/rvss/hazard_unit.h"
 
 #include <cstdint>
 #include <optional>
@@ -14,7 +15,7 @@
 class RVSSVMPipelined : public VmBase {
  public:
   RVSSVMPipelined();
-  ~RVSSVMPipelined() override;
+  ~RVSSVMPipelined();
 
   // Main control
   void Run() override;
@@ -93,6 +94,9 @@ class RVSSVMPipelined : public VmBase {
   // pipeline control helpers
   bool pc_update_pending_ = false;
   uint64_t pc_update_value_ = 0;
+    // hazard detection
+    HazardDetectionUnit hazard_unit_;
+    bool stall_ = false; // when true, IF/ID is frozen and ID/EX gets a bubble
 
   // stage functions
   void IF_stage();
