@@ -5,9 +5,6 @@
  */
 #include "command_handler.h"
 
-#include <string>
-#include <sstream>
-#include <vector>
 
 namespace command_handler {
 Command ParseCommand(const std::string &input) {
@@ -44,9 +41,9 @@ Command ParseCommand(const std::string &input) {
   
   
   
-  else if (command_str=="dump_mem" || command_str=="dmem") {
+   else if (command_str=="dump_mem" || command_str=="dmem") {
     command_type = command_handler::CommandType::DUMP_MEMORY;
-  } else if (command_str=="print_mem" || command_str=="pmem") {
+  } else if (command_str=="print_mem" || command_str=="pm" || command_str=="pmem") {
     command_type = command_handler::CommandType::PRINT_MEMORY;
   } else if (command_str=="get_mem_point" || command_str=="gmp") {
     command_type = command_handler::CommandType::GET_MEMORY_POINT;

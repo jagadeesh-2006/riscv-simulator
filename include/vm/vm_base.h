@@ -95,6 +95,10 @@ public:
     virtual void Undo() = 0;
     virtual void Redo() = 0;
     virtual void Reset() = 0;
+    // Control helpers for stopping VM execution from external threads
+    void RequestStop();
+    bool IsStopRequested() const;
+    void ClearStop();
     void DumpState(const std::filesystem::path &filename);
 
     void ModifyRegister(const std::string &reg_name, uint64_t value);

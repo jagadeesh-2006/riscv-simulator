@@ -14,8 +14,10 @@
 
 class RVSSVMPipelined : public VmBase {
  public:
+
   RVSSVMPipelined();
   ~RVSSVMPipelined();
+    bool hazard_detection_enabled_ = true;
 
   // Main control
   void Run() override;
