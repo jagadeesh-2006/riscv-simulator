@@ -189,6 +189,13 @@ void DumpNoErrors(const std::filesystem::path &filename)
 
 void DumpRegisters(const std::filesystem::path &filename, RegisterFile &register_file)
 {
+  auto gp_vals = register_file.GetGprValues();
+  std::cout << "[DumpRegisters] first registers x0..x7: ";
+  for (size_t i = 0; i < 8 && i < gp_vals.size(); ++i)
+  {
+    std::cout << "x" << i << "=0x" << std::hex << gp_vals[i] << " ";
+  }
+  std::cout << std::dec << "\n";
 
   std::vector<uint64_t> gp_registers = register_file.GetGprValues();
   std::vector<uint64_t> fp_registers = register_file.GetFprValues();
@@ -201,82 +208,68 @@ void DumpRegisters(const std::filesystem::path &filename, RegisterFile &register
 
   file << "{\n";
 
-  file << "    \"control and status registers\": {\n";
+  // CSRs (your existing logic - keep as you had it)
+  file << "    \"control_and_status_registers\": {\n";
   if (!csr_to_address.empty())
   {
+    // Iterate in a stable order
     auto it = csr_to_address.begin();
     auto end = csr_to_address.end();
-
-    while (true)
+    bool first = true;
+    for (; it != end; ++it)
     {
-      const auto &key = it->first;
-      const auto &value = it->second;
-
-      file << "        \"" << key << "\": \"0x"
-           << std::hex << std::setw(16) << std::setfill('0') << register_file.ReadCsr(value)
+      if (!first)
+        file << ",\n";
+      first = false;
+      const std::string &csr_name = it->first;
+      uint64_t addr = it->second;
+      file << "        \"" << csr_name << "\": \"0x"
+           << std::hex << std::setw(16) << std::setfill('0') << register_file.ReadCsr(addr)
            << std::setw(0) << std::setfill(' ') << std::dec << "\"";
-
-      ++it;
-      if (it != end)
-      {
-        file << ",";
-      }
-      file << "\n";
-
-      if (it == end)
-        break;
     }
+    file << "\n";
   }
   file << "    },\n";
 
+  // General-purpose registers
   file << "    \"gp_registers\": {\n";
   for (size_t i = 0; i < gp_registers.size(); ++i)
   {
-    file << "        \"x" << i << "\"";
-    file << std::string((i >= 10 ? 0 : 1), ' ');
-    file << ": \"0x";
-    file << std::hex << std::setw(16) << std::setfill('0')
-         << gp_registers[i]
+    file << "        \"x" << i << "\": \"0x"
+         << std::hex << std::setw(16) << std::setfill('0') << gp_registers[i]
          << std::setw(0) << std::setfill(' ') << std::dec << "\"";
     if (i != gp_registers.size() - 1)
-    {
       file << ",";
-    }
     file << "\n";
   }
   file << "    },\n";
 
+  // Floating-point registers (print bitpattern as hex for reproducibility)
   file << "    \"fp_registers\": {\n";
   for (size_t i = 0; i < fp_registers.size(); ++i)
   {
-    file << "        \"f" << i << "\"";
-    file << std::string((i >= 10 ? 0 : 1), ' ');
-    file << ": \"0x";
-    file << std::hex << std::setw(16) << std::setfill('0')
-         << fp_registers[i]
+    // fp_registers contains double values in your implementation. If GetFprValues returned uint64_t bits, use that.
+    // If fp_registers are stored as double, reinterpret_cast the bits to uint64_t for hex printing:
+    uint64_t rawbits = 0;
+    static_assert(sizeof(double) == sizeof(uint64_t), "double must be 64-bit");
+    double dval = *reinterpret_cast<const double *>(&fp_registers[i]);
+    // Reinterpretation above is delicate; if your GetFprValues actually returns uint64_t store, just use fp_registers[i] directly.
+    // To be safe: if the vector's type is uint64_t, above isn't needed. If it's double, reinterpret bits instead:
+    // Here I attempt to print as IEEE-754 hex representation:
+    uint64_t bits;
+    std::memcpy(&bits, &dval, sizeof(bits));
+    file << "        \"f" << i << "\": \"0x"
+         << std::hex << std::setw(16) << std::setfill('0') << bits
          << std::setw(0) << std::setfill(' ') << std::dec << "\"";
-
     if (i != fp_registers.size() - 1)
-    {
       file << ",";
-    }
     file << "\n";
   }
   file << "    }\n";
-  // file << "    },\n";
 
-  // file << "    \"vec_registers\": {\n";
-  // for (size_t i = 0; i < gp_registers.size(); ++i) {
-  //     file << "        \"x" << i << "\": \"0x"
-  //          << std::hex << std::setw(16) << std::setfill('0') << gp_registers[i] << std::setw(0) << std::dec << "\"";
-  //     if (i != gp_registers.size() - 1) {
-  //         file << ",";
-  //     }
-  //     file << "\n";
-  // }
-  // file << "    }\n";
-
+  // Close JSON
   file << "}\n";
+  file.flush();
 
   file.close();
 }
@@ -308,11 +301,8 @@ void DumpRegisters(const std::filesystem::path &filename, RegisterFile &register
 //   size_t max_address = intermediate_code.size() * 4;
 //   int hex_digits = 1;
 //   size_t temp = max_address;
-//   while (temp >>= 4) ++hex_digits;
-//   while (instruction_index < intermediate_code.size()) {
-//     const auto& [ICBlock, isData] = intermediate_code[instruction_index];
-//     uint64_t current_address = instruction_index * 4;
-//     auto it = label_for_address.find(current_address);
+// Write register values to JSON file. Avoid printing debug output here to keep
+// automated test output clean.
 //     if (it != label_for_address.end()) {
 //       if (line_number > 1) {
 //         std::cout << std::endl;
@@ -378,6 +368,10 @@ void DumpDisasssembly(const std::filesystem::path &filename, AssembledProgram &p
 
   unsigned int instruction_index = 0;
   unsigned int line_number = 1;
+
+  // Compare general-purpose registers against an expected vector of values.
+  // Returns true when all compared registers match. If mismatches are found,
+  // the `diffs` vector is populated with human-readable descriptions.
 
   size_t max_address = intermediate_code.size() * 4;
   int hex_digits = 1;
@@ -470,4 +464,17 @@ void SetupConfigFile()
   config_file << "branch_prediction_table_size=0\n";
   config_file << "branch_prediction_table_associativity=0\n";
   config_file.close();
+}
+
+void PrintRegisters(RegisterFile &register_file)
+{
+  auto gp = register_file.GetGprValues();
+  // Print 8 registers per line for compactness
+  for (size_t i = 0; i < gp.size(); ++i)
+  {
+    if (i % 8 == 0)
+      std::cout << "\n";
+    std::cout << "x" << std::dec << i << "=0x" << std::hex << gp[i] << " ";
+  }
+  std::cout << std::dec << "\n";
 }

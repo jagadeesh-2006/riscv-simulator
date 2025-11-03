@@ -12,12 +12,12 @@
 #include <cstdint>
 #include <optional>
 
-class RVSSVMPipelined : public VmBase {
- public:
-
+class RVSSVMPipelined : public VmBase
+{
+public:
   RVSSVMPipelined();
   ~RVSSVMPipelined();
-    bool hazard_detection_enabled_ = true;
+  bool hazard_detection_enabled_ = true;
 
   // Main control
   void Run() override;
@@ -27,18 +27,20 @@ class RVSSVMPipelined : public VmBase {
   void Redo() override;
   void Reset() override;
 
- private:
+private:
   // Simple control unit reused from single-cycle design
   RVSSControlUnit control_unit_;
 
   // Pipeline register structs
-  struct IF_ID {
+  struct IF_ID
+  {
     bool valid = false;
     uint64_t pc = 0;
     uint32_t instruction = 0;
   } if_id_, if_id_next_;
 
-  struct ID_EX {
+  struct ID_EX
+  {
     bool valid = false;
     uint64_t pc = 0;
     uint32_t instruction = 0;
@@ -48,6 +50,7 @@ class RVSSVMPipelined : public VmBase {
     uint8_t rs2 = 0;
     uint8_t rd = 0;
     uint8_t funct3 = 0;
+    bool is_syscall = false;
     uint8_t funct7 = 0;
     int32_t imm = 0;
 
@@ -65,7 +68,8 @@ class RVSSVMPipelined : public VmBase {
     bool is_float = false;
   } id_ex_, id_ex_next_;
 
-  struct EX_MEM {
+  struct EX_MEM
+  {
     bool valid = false;
     uint64_t pc = 0;
     uint32_t instruction = 0;
@@ -84,7 +88,8 @@ class RVSSVMPipelined : public VmBase {
     uint64_t branch_target = 0;
   } ex_mem_, ex_mem_next_;
 
-  struct MEM_WB {
+  struct MEM_WB
+  {
     bool valid = false;
     uint8_t rd = 0;
     bool reg_write = false;
@@ -96,9 +101,9 @@ class RVSSVMPipelined : public VmBase {
   // pipeline control helpers
   bool pc_update_pending_ = false;
   uint64_t pc_update_value_ = 0;
-    // hazard detection
-    HazardDetectionUnit hazard_unit_;
-    bool stall_ = false; // when true, IF/ID is frozen and ID/EX gets a bubble
+  // hazard detection
+  HazardDetectionUnit hazard_unit_;
+  bool stall_ = false; // when true, IF/ID is frozen and ID/EX gets a bubble
 
   // stage functions
   void IF_stage();
@@ -109,6 +114,8 @@ class RVSSVMPipelined : public VmBase {
 
   // utilities
   void advance_pipeline_registers();
+  // debug print of pipeline registers and a small GPR snapshot
+  void PrintPipelineState();
 };
 
 #endif // RVSS_VM_PIPELINED_H

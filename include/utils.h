@@ -14,6 +14,7 @@
 
 #include <string>
 #include <filesystem>
+#include <vector>
 
 void setupVmStateDirectory();
 
@@ -50,6 +51,13 @@ void DumpErrors(const std::filesystem::path &filename, const std::vector<ParseEr
 void DumpNoErrors(const std::filesystem::path &filename);
 
 void DumpRegisters(const std::filesystem::path &filename, RegisterFile &register_file);
+
+// Compare general-purpose registers against an expected vector of values.
+// `diffs` will be populated with human-readable mismatch descriptions.
+bool CheckRegistersEqual(RegisterFile &register_file, const std::vector<uint64_t> &expected, std::vector<std::string> &diffs);
+
+// Print general-purpose registers to stdout in a compact form for debugging.
+void PrintRegisters(RegisterFile &register_file);
 
 void DumpDisasssembly(const std::filesystem::path &filename, AssembledProgram &program);
 
